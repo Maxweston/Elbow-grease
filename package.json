@@ -1,0 +1,25 @@
+{
+  "name": "elbow-grease",
+  "version": "1.0.0",
+  "description": "Elbow Greece Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maxweston/Elbow-grease.git"
+  },
+  "author": "Max Weston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maxweston/Elbow-grease/issues"
+  },
+  "homepage": "https://github.com/Maxweston/Elbow-grease#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "pug": "^2.0.0-rc.2",
+    "stylus": "^0.54.5"
+  }
+}
