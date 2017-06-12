@@ -1,18 +1,6 @@
 var gulp = require('gulp');
 var pug = require('gulp-pug');
-var stylus = require('stylus');
-
-// gulp.src('src/templates/*.pug')
-//   .pipe(pug())
-//   .pipe(gulp.dest('dist'))
-
-// gulp.src('src/styles/*.styl')
-//   .pipe(stylus())
-//   .pipe(gulp.dest('dist/css'))
-
-// gulp.task('default', function() {
-  // place code for your default task here
-// });
+var stylus = require('gulp-stylus');
 
 gulp.task('build:pug', function() {
   var stream = gulp.src('src/templates/index.pug')
