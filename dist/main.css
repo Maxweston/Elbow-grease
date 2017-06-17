@@ -19,7 +19,25 @@
   font-weight: normal;
   font-style: normal;
 }
-h1 {
-  color: #000;
-  font-family: 'novel_proregular';
+body,
+html {
+  height: 100%;
+  margin: 0px;
+}
+.header-image {
+  height: 100%;
+  background-image: url("./assets/hands.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding-top: 20px;
+}
+.title-logo {
+  background-image: url("./assets/elbow-grease-white.svg");
+  width: 100px;
+  height: 58px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }

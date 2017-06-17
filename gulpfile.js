@@ -13,3 +13,8 @@ gulp.task('build:stylus', function() {
   .pipe(stylus())
   .pipe(gulp.dest('dist'))
 })
+
+gulp.task('watch', function() {
+  gulp.watch('src/styles/*.styl', ['build:stylus'])
+  gulp.watch('src/templates/*.pug', ['build:pug'])
+})
