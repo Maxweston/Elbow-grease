@@ -8,14 +8,27 @@ body, html
   height 100%
   margin 0px
 
-.header-image
+.main-wrapper
   height 100%
+  background-color: white;
   background-image url('./assets/hands.jpg')
   background-size cover
   background-repeat no-repeat
   background-position center
+  background-attachment fixed
   position relative
   padding-top 20px
+
+// .header-image
+//   height 100%
+//   background-color: white;
+//   background-image url('./assets/hands.jpg')
+//   background-size cover
+//   background-repeat no-repeat
+//   background-position center
+//   background-attachment fixed
+//   position relative
+//   padding-top 20px
 
 .title-logo
   background-image url('./assets/elbow-grease-white.svg')
@@ -24,3 +37,25 @@ body, html
   background-size contain
   background-repeat no-repeat
   margin 0 auto
+
+.main-description
+  background:rgba(255,255,255,0.5);
+  height 100%
+  padding 7% 7%
+  font-family $regaular-font
+  font-size 32px
+  text-align center
+  margin-top 100px
+  p:nth-of-type(2)
+    margin-top 50px
+  span
+    text-decoration underline
+
+.issue-list
+  // height 100%
+  // background-color rgba(0, 0, 0, 0.8)
+  background-position center
+  background-repeat no-repeat
+  background-size cover
+  height:100vh;
+  // background:rgba(255,255,255,0.5);
