@@ -49,8 +49,8 @@ section {
 }
 .title-logo {
   background-image: url("./assets/elbow-grease-white.svg");
-  width: 100px;
-  height: 58px;
+  width: 160px;
+  height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -72,6 +72,44 @@ section {
 .issue-list {
   background-color: rgba(0,0,0,0.8);
   color: #fff;
+}
+.issue-number {
+  display: inline-block;
+  font-family: 'novel_sans_proregular';
+  font-size: 400px;
+  width: 50%;
+  text-align: right;
+}
+.issue-details {
+  display: inline-block;
+  width: 50%;
+}
+.issue-title--number {
+  font-family: 'novel_sans_proregular';
+  font-size: 20px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+.issue-title--name {
+  font-family: 'novel_sans_proextrabold';
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1.1px;
+}
+.issue-description {
+  font-family: 'novel_proregular';
+  font-size: 20px;
+  width: 40%;
+}
+.purchase-button {
+  font-family: 'novel_sans_proextrabold';
+  font-size: 18px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  width: 50px;
+  border: 2px solid #fff;
+  padding: 5px 17px;
+  margin: 0px 0px 10px 0px;
 }
 .footer {
   height: 150px;
