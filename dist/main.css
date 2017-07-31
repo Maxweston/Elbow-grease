@@ -107,10 +107,12 @@ ul {
   align-items: center;
 }
 .issue-details {
-  display: inline-block;
   vertical-align: top;
   height: 302px;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .issue-title--number {
   font-family: 'novel_sans_proregular';
@@ -137,7 +139,6 @@ ul {
   width: 150px;
   border: 2px solid #fff;
   padding: 5px 17px;
-  margin: 0px 0px 10px 0px;
 }
 .issue-selector-section {
   width: 100%;
@@ -163,5 +164,13 @@ ul {
   text-decoration: underline;
 }
 .footer {
-  height: 150px;
+  background: #fff;
+  height: 200px;
+}
+.elbow-grease-footer-image {
+  background: url("./assets/Elbowgrease_logo-01.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 50px;
 }
