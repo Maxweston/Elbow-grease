@@ -34,6 +34,15 @@ html {
 section {
   height: 100vh;
 }
+p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+}
 .main-wrapper {
   background-color: #fff;
   background-image: url("./assets/hands.jpg");
@@ -57,11 +66,14 @@ section {
 }
 .main-description {
   background: #fff;
-  padding: 7% 7%;
+  padding: 0px 7%;
   font-family: 'novel_proregular';
   font-size: 32px;
   text-align: center;
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .main-description p:nth-of-type(2) {
   margin-top: 50px;
@@ -72,6 +84,9 @@ section {
 .issue-list {
   background-color: rgba(0,0,0,0.8);
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .issue-number {
   display: inline-block;
@@ -79,9 +94,22 @@ section {
   font-size: 400px;
   width: 50%;
   text-align: right;
+  line-height: 302px;
+}
+.active-issue {
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.issue-one {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .issue-details {
   display: inline-block;
+  vertical-align: top;
+  height: 302px;
   width: 50%;
 }
 .issue-title--number {
@@ -110,6 +138,29 @@ section {
   border: 2px solid #fff;
   padding: 5px 17px;
   margin: 0px 0px 10px 0px;
+}
+.issue-selector-section {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+.issue-selector {
+  list-style-type: none;
+  text-align: center;
+  margin: 40px 0px 10px 0px;
+}
+.issue-selector-number {
+  font-family: 'novel_proregular';
+  display: inline-block;
+  margin: 0px 10px;
+  font-size: 14px;
+  padding: 0px 7px 0px 7px;
+}
+.stocking-link {
+  font-family: 'novel_sans_proextrabold';
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 .footer {
   height: 150px;
