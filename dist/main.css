@@ -64,6 +64,11 @@ ul {
   background-repeat: no-repeat;
   margin: 0 auto;
 }
+.title-text {
+  font-family: 'novel_sans_proextrabold';
+  font-size: 30px;
+  color: #fff;
+}
 .main-description {
   background: #fff;
   padding: 0px 7%;
