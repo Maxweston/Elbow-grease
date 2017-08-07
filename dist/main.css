@@ -200,3 +200,9 @@ ul {
   text-transform: uppercase;
   font-size: 11px;
 }
+.footer-description-copy {
+  width: 63%;
+  margin: 0 auto;
+  font-family: 'novel_proregular';
+  font-size: 13px;
+}
