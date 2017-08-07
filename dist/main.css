@@ -64,6 +64,11 @@ ul {
   background-repeat: no-repeat;
   margin: 0 auto;
 }
+.title-text {
+  font-family: 'novel_sans_proextrabold';
+  font-size: 30px;
+  color: #fff;
+}
 .main-description {
   background: #fff;
   padding: 0px 7%;
@@ -169,12 +174,13 @@ ul {
   padding: 40px 50px 40px 50px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .logo-section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 27%;
+  width: 17%;
 }
 .elbow-grease-footer-image {
   background: url("./assets/Elbowgrease_logo-02.svg");
@@ -205,4 +211,62 @@ ul {
   margin: 0 auto;
   font-family: 'novel_proregular';
   font-size: 13px;
+  font-size: 11px;
+  width: 300px;
+}
+.footer-description-divider {
+  margin: 0 auto;
+  width: 30px;
+  background: #000;
+  height: 2px;
+}
+.footer-copyright {
+  font-family: 'novel_sans_proextrabold';
+  text-transform: uppercase;
+  color: #000;
+  font-size: 9px;
+}
+.social-media-icons {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.facebook-icon {
+  background: url("./assets/facebook.svg");
+  background-repeat: no-repeat;
+  height: 17px;
+  width: 17px;
+  padding: 0px;
+  display: block;
+  background-size: 70%;
+  background-position: 2px 3px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+}
+.instagram-icon {
+  background: url("./assets/instagram.svg");
+  background-repeat: no-repeat;
+  height: 17px;
+  width: 17px;
+  padding: 0px;
+  display: block;
+  background-size: 70%;
+  background-position: 3px 3px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  margin: 0px 10px;
+}
+.twitter-icon {
+  background: url("./assets/twitter.svg");
+  background-repeat: no-repeat;
+  height: 17px;
+  width: 17px;
+  padding: 0px;
+  display: block;
+  background-size: 70%;
+  background-position: 3px 3px;
+  box-sizing: border-box;
+  border: 1px solid #000;
 }
