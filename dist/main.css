@@ -66,8 +66,12 @@ ul {
 }
 .title-text {
   font-family: 'novel_sans_proextrabold';
-  font-size: 30px;
   color: #fff;
+  margin: 0 auto;
+  font-size: 60px;
+  width: 642px;
+  text-align: center;
+  margin-top: 21vh;
 }
 .main-description {
   background: #fff;
