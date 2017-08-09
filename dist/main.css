@@ -172,6 +172,37 @@ ul {
   text-transform: uppercase;
   text-decoration: underline;
 }
+.community-section {
+  height: 150vh;
+  padding-top: 21vh;
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+}
+.community-section--title {
+  text-align: center;
+}
+.community-section--title h1 {
+  font-family: 'novel_sans_proextrabold';
+  text-transform: uppercase;
+  font-size: 63px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+.community-section--pin-icon {
+  background: url("./assets/events-pin-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 58px;
+  height: 58px;
+  background-position: 8px 0px;
+  margin: 70px auto;
+}
+.community-section--testamonials-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .footer {
   background: #fff;
   height: 200px;
