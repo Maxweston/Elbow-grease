@@ -68,10 +68,10 @@ ul {
   font-family: 'novel_sans_proextrabold';
   color: #fff;
   margin: 0 auto;
-  font-size: 60px;
-  width: 642px;
+  font-size: calc(60px + 0.3vw);
+  width: 60%;
   text-align: center;
-  margin-top: 21vh;
+  margin-top: 35vh;
 }
 .main-description {
   background: #fff;
@@ -173,10 +173,10 @@ ul {
   text-decoration: underline;
 }
 .community-section {
-  height: 250vh;
-  padding-top: 21vh;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  height: 89vh;
+  display: flex;
+  flex-direction: column;
+  padding: 7vh 2vw 0 2vw;
   width: 100%;
   background: #fff;
   box-sizing: border-box;
@@ -199,11 +199,6 @@ ul {
   height: 58px;
   background-position: 8px 0px;
   margin: 70px auto;
-}
-.mU4ghb-N4imRe-yePe5c,
-.N4imRe-yePe5c,
-.i4ewOd-pzNkMb-haAclf {
-  display: none;
 }
 .community-section--testamonials-section {
   display: flex;
@@ -258,7 +253,7 @@ ul {
   text-align: center;
   font-family: 'novel_proregular';
   font-size: 32px;
-  margin: 50px 0px 0px 0px;
+  margin: 10vh 0 0 0;
 }
 .community-section--email {
   text-align: center;
@@ -267,13 +262,17 @@ ul {
   text-decoration: underline;
   margin: 20px 0px 0px 0px;
 }
+.community-section--sponsers--section {
+  margin-top: auto;
+  margin-bottom: 40px;
+}
 .community-section--sponsers-section--logo {
   background-image: url("./assets/bip_logo.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 100px;
   height: 100px;
-  margin: 300px auto 0px auto;
+  margin: 0 auto;
 }
 .community-section--sponsers-section--line-one {
   margin: 10px 0px 0px 0px;
@@ -290,7 +289,7 @@ ul {
   font-size: 14px;
 }
 .footer {
-  background: #fff;
+  background: #000;
   height: 200px;
   padding: 40px 50px 40px 50px;
   display: flex;
@@ -304,7 +303,7 @@ ul {
   width: 17%;
 }
 .elbow-grease-footer-image {
-  background: url("./assets/Elbowgrease_logo-02.svg");
+  background: url("./assets/elbow-grease-white.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 106px;
@@ -313,7 +312,7 @@ ul {
 .email-adress {
   font-family: 'novel_sans_proextrabold';
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
   font-size: 9px;
 }
 .footer-description {
@@ -324,10 +323,12 @@ ul {
 }
 .footer-description-heading {
   font-family: 'novel_sans_proextrabold';
+  color: #fff;
   text-transform: uppercase;
   font-size: 11px;
 }
 .footer-description-copy {
+  color: #fff;
   width: 63%;
   margin: 0 auto;
   font-family: 'novel_proregular';
@@ -338,13 +339,13 @@ ul {
 .footer-description-divider {
   margin: 0 auto;
   width: 30px;
-  background: #000;
+  background: #fff;
   height: 2px;
 }
 .footer-copyright {
   font-family: 'novel_sans_proextrabold';
+  color: #fff;
   text-transform: uppercase;
-  color: #000;
   font-size: 9px;
 }
 .social-media-icons {
@@ -355,6 +356,7 @@ ul {
   justify-content: flex-end;
 }
 .facebook-icon {
+  color: #fff;
   background: url("./assets/facebook.svg");
   background-repeat: no-repeat;
   height: 17px;
@@ -364,7 +366,7 @@ ul {
   background-size: 70%;
   background-position: 2px 3px;
   box-sizing: border-box;
-  border: 1px solid #000;
+  border: 1px solid #fff;
 }
 .instagram-icon {
   background: url("./assets/instagram.svg");
@@ -376,7 +378,7 @@ ul {
   background-size: 70%;
   background-position: 3px 3px;
   box-sizing: border-box;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   margin: 0px 10px;
 }
 .twitter-icon {
@@ -389,5 +391,5 @@ ul {
   background-size: 70%;
   background-position: 3px 3px;
   box-sizing: border-box;
-  border: 1px solid #000;
+  border: 1px solid #fff;
 }
