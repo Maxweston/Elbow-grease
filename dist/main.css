@@ -55,23 +55,29 @@ ul {
 .header {
   background: rgba(0,0,0,0);
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .title-logo {
   background-image: url("./assets/elbow-grease-white.svg");
-  width: 160px;
-  height: 100px;
+  width: 315px;
+  height: 183px;
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
+  flex: 0 0 auto;
+  display: flex;
 }
 .title-text {
   font-family: 'novel_sans_proextrabold';
   color: #fff;
-  margin: 0 auto;
-  font-size: calc(60px + 0.3vw);
-  width: 60%;
+  margin: auto;
+  flex: 0 0 auto;
+  height: 412px;
+  font-size: calc(73px + 0.3vw);
+  width: 725px;
   text-align: center;
-  margin-top: 35vh;
+  display: flex;
 }
 .main-description {
   background: #fff;
