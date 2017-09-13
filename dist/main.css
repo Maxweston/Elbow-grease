@@ -83,7 +83,7 @@ ul {
   background: #fff;
   padding: 0px 7%;
   font-family: 'novel_proregular';
-  font-size: 32px;
+  font-size: 58px;
   text-align: center;
   margin-top: 100px;
   display: flex;
@@ -91,7 +91,7 @@ ul {
   justify-content: center;
 }
 .main-description p:nth-of-type(2) {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .main-description span {
   text-decoration: underline;
@@ -106,14 +106,10 @@ ul {
 .issue-number {
   display: inline-block;
   font-family: 'novel_sans_proregular';
-  font-size: 400px;
+  font-size: 600px;
   width: 50%;
   text-align: right;
-  line-height: 302px;
-}
-.active-issue {
-  border: 1px solid #fff;
-  border-radius: 50%;
+  line-height: 467px;
 }
 .issue-one {
   display: flex;
@@ -123,7 +119,7 @@ ul {
 }
 .issue-details {
   vertical-align: top;
-  height: 302px;
+  height: 451px;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -131,46 +127,48 @@ ul {
 }
 .issue-title--number {
   font-family: 'novel_sans_proregular';
-  font-size: 20px;
+  font-size: 40px;
   letter-spacing: 1.1px;
   text-transform: uppercase;
 }
 .issue-title--name {
   font-family: 'novel_sans_proextrabold';
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 35px;
   letter-spacing: 1.1px;
 }
 .issue-description {
   font-family: 'novel_proregular';
-  font-size: 20px;
-  width: 40%;
+  font-size: 31px;
+  width: calc(100% - 131px);
 }
 .purchase-button {
   font-family: 'novel_sans_proextrabold';
-  font-size: 18px;
+  font-size: 29px;
   letter-spacing: 1.1px;
   text-transform: uppercase;
-  width: 150px;
+  width: 211px;
   border: 2px solid #fff;
   padding: 5px 17px;
 }
 .issue-selector-section {
   width: 100%;
-  height: 60px;
   text-align: center;
 }
 .issue-selector {
   list-style-type: none;
   text-align: center;
-  margin: 40px 0px 10px 0px;
+  margin: 40px 0px 40px 0px;
 }
 .issue-selector-number {
   font-family: 'novel_proregular';
   display: inline-block;
   margin: 0px 10px;
-  font-size: 14px;
+  font-size: 40px;
   padding: 0px 7px 0px 7px;
+}
+.active-issue {
+  border-bottom: 7px solid #fff;
 }
 .stocking-link {
   font-family: 'novel_sans_proextrabold';
@@ -179,10 +177,10 @@ ul {
   text-decoration: underline;
 }
 .community-section {
-  height: 89vh;
+  height: 126vh;
   display: flex;
   flex-direction: column;
-  padding: 7vh 2vw 0 2vw;
+  padding: 7vh 7vw 0 7vw;
   width: 100%;
   background: #fff;
   box-sizing: border-box;
@@ -193,7 +191,7 @@ ul {
 .community-section--title h1 {
   font-family: 'novel_sans_proextrabold';
   text-transform: uppercase;
-  font-size: 63px;
+  font-size: 97px;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
 }
@@ -201,15 +199,18 @@ ul {
   background: url("./assets/events-pin-icon.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 58px;
-  height: 58px;
+  width: 100px;
+  height: 100px;
   background-position: 8px 0px;
   margin: 70px auto;
 }
 .community-section--testamonials-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+}
+.testamonial-wrapper {
+  margin-bottom: 100px;
 }
 .testamonial-logo {
   background-repeat: no-repeat;
@@ -218,8 +219,8 @@ ul {
 }
 .papersmiths-logo {
   background-image: url("./assets/papersmiths.svg");
-  width: 178px;
-  height: 48px;
+  width: 344px;
+  height: 74px;
   background-position: 0px 8px;
 }
 .extract-logo {
@@ -234,24 +235,24 @@ ul {
 }
 .testamonial-copy {
   font-family: 'novel_sans_proregular';
-  font-size: 20px;
+  font-size: 36px;
   text-align: center;
 }
 .testamonial-divider {
-  width: 30px;
+  width: 75px;
   height: 3px;
   background: #000;
   margin: 30px auto 30px auto;
 }
 .testamonial-person {
   font-family: 'novel_sans_proextrabold';
-  font-size: 20px;
+  font-size: 27px;
   text-align: center;
 }
 .testamonial-position {
   font-family: 'novel_sans_proregular';
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 28px;
   margin: 12px auto 0px auto;
   text-align: center;
 }
