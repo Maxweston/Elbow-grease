@@ -177,7 +177,7 @@ ul {
   text-decoration: underline;
 }
 .community-section {
-  height: 126vh;
+  height: 146vh;
   display: flex;
   flex-direction: column;
   padding: 7vh 7vw 0 7vw;
@@ -225,13 +225,13 @@ ul {
 }
 .extract-logo {
   background-image: url("./assets/extract.svg");
-  width: 106px;
-  height: 48px;
+  width: 210px;
+  height: 95px;
 }
 .magculture-logo {
   background-image: url("./assets/magculture.svg");
-  width: 156px;
-  height: 48px;
+  width: 222px;
+  height: 68px;
 }
 .testamonial-copy {
   font-family: 'novel_sans_proregular';
@@ -260,7 +260,7 @@ ul {
   text-align: center;
   font-family: 'novel_proregular';
   font-size: 32px;
-  margin: 10vh 0 0 0;
+  margin: 4vh 0 0 0;
 }
 .community-section--email {
   text-align: center;
