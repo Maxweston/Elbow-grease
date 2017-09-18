@@ -60,8 +60,8 @@ ul {
 }
 .title-logo {
   background-image: url("./assets/elbow-grease-white.svg");
-  width: 315px;
-  height: 183px;
+  width: 120px;
+  height: 71px;
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -74,8 +74,8 @@ ul {
   margin: auto;
   flex: 0 0 auto;
   height: 412px;
-  font-size: calc(73px + 0.3vw);
-  width: 725px;
+  font-size: 31px;
+  height: 139px;
   text-align: center;
   display: flex;
 }
@@ -297,30 +297,31 @@ ul {
 }
 .footer {
   background: #000;
-  height: 200px;
+  height: 350px;
   padding: 40px 50px 40px 50px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 .logo-section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 17%;
+  align-items: center;
 }
 .elbow-grease-footer-image {
   background: url("./assets/elbow-grease-white.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 106px;
-  height: 61px;
+  width: 156px;
+  height: 90px;
 }
 .email-adress {
   font-family: 'novel_sans_proextrabold';
   text-transform: uppercase;
   color: #fff;
-  font-size: 9px;
+  font-size: 17px;
+  margin-top: 30px;
 }
 .footer-description {
   text-align: center;
@@ -332,71 +333,70 @@ ul {
   font-family: 'novel_sans_proextrabold';
   color: #fff;
   text-transform: uppercase;
-  font-size: 11px;
+  font-size: 19px;
+  display: none;
 }
 .footer-description-copy {
   color: #fff;
   width: 63%;
   margin: 0 auto;
   font-family: 'novel_proregular';
-  font-size: 13px;
-  font-size: 11px;
   width: 300px;
+  display: none;
+  font-size: 35px;
 }
 .footer-description-divider {
   margin: 0 auto;
   width: 30px;
   background: #fff;
   height: 2px;
+  display: none;
 }
 .footer-copyright {
   font-family: 'novel_sans_proextrabold';
   color: #fff;
   text-transform: uppercase;
-  font-size: 9px;
+  font-size: 15px;
 }
 .social-media-icons {
-  width: 200px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: center;
+}
+.facebook-icon,
+.instagram-icon,
+.twitter-icon {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
 }
 .facebook-icon {
   color: #fff;
   background: url("./assets/facebook.svg");
   background-repeat: no-repeat;
-  height: 17px;
-  width: 17px;
   padding: 0px;
   display: block;
   background-size: 70%;
-  background-position: 2px 3px;
+  background-position: 6px 5px;
   box-sizing: border-box;
-  border: 1px solid #fff;
 }
 .instagram-icon {
   background: url("./assets/instagram.svg");
   background-repeat: no-repeat;
-  height: 17px;
-  width: 17px;
   padding: 0px;
   display: block;
   background-size: 70%;
-  background-position: 3px 3px;
+  background-position: 6px 5px;
   box-sizing: border-box;
-  border: 1px solid #fff;
-  margin: 0px 10px;
+  margin: 0px 15px;
 }
 .twitter-icon {
   background: url("./assets/twitter.svg");
   background-repeat: no-repeat;
-  height: 17px;
-  width: 17px;
   padding: 0px;
   display: block;
   background-size: 70%;
-  background-position: 3px 3px;
+  background-position: 6px 5px;
   box-sizing: border-box;
-  border: 1px solid #fff;
 }
