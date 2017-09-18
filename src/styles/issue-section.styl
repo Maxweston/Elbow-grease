@@ -1,19 +1,22 @@
 .issue-list
-  background-color rgba(0, 0, 0, 0.8)
+  // background-color rgba(0, 0, 0, 0.8)
+  background-color transparent
   color white
   display flex
   flex-direction column
   justify-content center
+  width: 100%
 
 .issue-number
   display inline-block
   font-family $regaular-sans-font
   // font-size 400px
-  font-size 600px
+  // font-size 600px
+  font-size 200px
   width: 50%
   text-align right
-  // line-height 302px
-  line-height 467px
+  line-height 302px
+  // line-height 467px
 
 .issue-one
   display flex
@@ -23,8 +26,9 @@
 
 .issue-details
   vertical-align top
-  // height 302px
-  height 451px
+  // height 220px
+  // height 235px
+  height 260px
   width 50%
   display flex
   flex-direction column
@@ -33,7 +37,8 @@
 .issue-title--number
   font-family $regaular-sans-font
   // font-size 20px
-  font-size 40px
+  // font-size 40px
+  font-size 16px
   letter-spacing: 1.1px
   text-transform uppercase
 
@@ -41,27 +46,32 @@
   font-family $bold-font
   text-transform: uppercase
   // font-size 20px
-  font-size 35px
-
+  // font-size 35px
+  font-size 16px
   letter-spacing 1.1px
 
 .issue-description
   font-family: $regaular-font
   // font-size 20px
-  font-size 31px
+  // font-size 31px
+  font-size 16px
   // width 40%
-  width calc(100% - 131px)
+  // width calc(100% - 131px)
+  width calc(100% - 20px)
 
 .purchase-button
   font-family $bold-font
   // font-size 18px
-  font-size 29px
+  // font-size 29px
+  font-size 14px
   letter-spacing: 1.1px
   text-transform uppercase
   // width 150px
-  width 211px
+  // width 211px
+  width 106px
   border 2px solid white
-  padding 5px 17px
+  // padding 5px 17px
+  padding 4px 7px
 
 .issue-selector-section
   width 100%
@@ -72,17 +82,20 @@
   list-style-type none
   text-align center
   // margin 40px 0px 10px 0px
-  margin 40px 0px 40px 0px
+  // margin 40px 0px 40px 0px
+  margin 0px 0px 10px 0px
 
 .issue-selector-number
   font-family $regaular-font
   display inline-block
   margin 0px 10px
-  font-size 40px
+  // font-size 40px
+  font-size 20px
   padding 0px 7px 0px 7px
 
 .active-issue
-  border-bottom 7px solid white
+  // border-bottom 7px solid white
+  border-bottom 2px solid white
 
 .stocking-link
   font-family $bold-font

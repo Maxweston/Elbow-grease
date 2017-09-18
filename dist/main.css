@@ -44,6 +44,8 @@ ul {
   -webkit-padding-start: 0;
 }
 .main-wrapper {
+  height: 100%;
+  width: 100%;
   background-color: #fff;
   background-image: url("./assets/hands.jpg");
   background-size: cover;
@@ -83,9 +85,8 @@ ul {
   background: #fff;
   padding: 0px 7%;
   font-family: 'novel_proregular';
-  font-size: 58px;
+  font-size: 20px;
   text-align: center;
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,19 +98,20 @@ ul {
   text-decoration: underline;
 }
 .issue-list {
-  background-color: rgba(0,0,0,0.8);
+  background-color: transparent;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 .issue-number {
   display: inline-block;
   font-family: 'novel_sans_proregular';
-  font-size: 600px;
+  font-size: 200px;
   width: 50%;
   text-align: right;
-  line-height: 467px;
+  line-height: 302px;
 }
 .issue-one {
   display: flex;
@@ -119,7 +121,7 @@ ul {
 }
 .issue-details {
   vertical-align: top;
-  height: 451px;
+  height: 260px;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -127,29 +129,29 @@ ul {
 }
 .issue-title--number {
   font-family: 'novel_sans_proregular';
-  font-size: 40px;
+  font-size: 16px;
   letter-spacing: 1.1px;
   text-transform: uppercase;
 }
 .issue-title--name {
   font-family: 'novel_sans_proextrabold';
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 16px;
   letter-spacing: 1.1px;
 }
 .issue-description {
   font-family: 'novel_proregular';
-  font-size: 31px;
-  width: calc(100% - 131px);
+  font-size: 16px;
+  width: calc(100% - 20px);
 }
 .purchase-button {
   font-family: 'novel_sans_proextrabold';
-  font-size: 29px;
+  font-size: 14px;
   letter-spacing: 1.1px;
   text-transform: uppercase;
-  width: 211px;
+  width: 106px;
   border: 2px solid #fff;
-  padding: 5px 17px;
+  padding: 4px 7px;
 }
 .issue-selector-section {
   width: 100%;
@@ -158,17 +160,17 @@ ul {
 .issue-selector {
   list-style-type: none;
   text-align: center;
-  margin: 40px 0px 40px 0px;
+  margin: 0px 0px 10px 0px;
 }
 .issue-selector-number {
   font-family: 'novel_proregular';
   display: inline-block;
   margin: 0px 10px;
-  font-size: 40px;
+  font-size: 20px;
   padding: 0px 7px 0px 7px;
 }
 .active-issue {
-  border-bottom: 7px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 .stocking-link {
   font-family: 'novel_sans_proextrabold';
@@ -177,7 +179,7 @@ ul {
   text-decoration: underline;
 }
 .community-section {
-  height: 146vh;
+  height: 307vh;
   display: flex;
   flex-direction: column;
   padding: 7vh 7vw 0 7vw;
@@ -191,7 +193,7 @@ ul {
 .community-section--title h1 {
   font-family: 'novel_sans_proextrabold';
   text-transform: uppercase;
-  font-size: 97px;
+  font-size: 34px;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
 }
@@ -199,10 +201,11 @@ ul {
   background: url("./assets/events-pin-icon.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100px;
-  height: 100px;
   background-position: 8px 0px;
   margin: 70px auto;
+  width: 40px;
+  height: 75px;
+  margin: 11px auto 38px auto;
 }
 .community-section--testamonials-section {
   display: flex;
@@ -219,53 +222,56 @@ ul {
 }
 .papersmiths-logo {
   background-image: url("./assets/papersmiths.svg");
-  width: 344px;
-  height: 74px;
+  height: 42px;
+  width: 153px;
   background-position: 0px 8px;
 }
 .extract-logo {
   background-image: url("./assets/extract.svg");
-  width: 210px;
-  height: 95px;
+  width: 117px;
+  height: 54px;
 }
 .magculture-logo {
   background-image: url("./assets/magculture.svg");
   width: 222px;
   height: 68px;
+  background-image: url("./assets/magculture.svg");
+  width: 142px;
+  height: 46px;
 }
 .testamonial-copy {
   font-family: 'novel_sans_proregular';
-  font-size: 36px;
+  font-size: 18px;
   text-align: center;
 }
 .testamonial-divider {
-  width: 75px;
+  width: 30px;
   height: 3px;
   background: #000;
-  margin: 30px auto 30px auto;
+  margin: 20px auto 20px auto;
 }
 .testamonial-person {
   font-family: 'novel_sans_proextrabold';
-  font-size: 27px;
+  font-size: 17px;
   text-align: center;
 }
 .testamonial-position {
   font-family: 'novel_sans_proregular';
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 16px;
   margin: 12px auto 0px auto;
   text-align: center;
 }
 .community-section--summary {
   text-align: center;
   font-family: 'novel_proregular';
-  font-size: 32px;
+  font-size: 21px;
   margin: 4vh 0 0 0;
 }
 .community-section--email {
   text-align: center;
   font-family: 'novel_proregular';
-  font-size: 32px;
+  font-size: 21px;
   text-decoration: underline;
   margin: 20px 0px 0px 0px;
 }
@@ -277,8 +283,8 @@ ul {
   background-image: url("./assets/bip_logo.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   margin: 0 auto;
 }
 .community-section--sponsers-section--line-one {
@@ -286,19 +292,19 @@ ul {
   text-align: center;
   font-family: 'novel_sans_proregular';
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 11px;
 }
 .community-section--sponsers-section--line-two {
   margin: 10px 0px 0px 0px;
   text-align: center;
   font-family: 'novel_sans_proextrabold';
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 11px;
 }
 .footer {
   background: #000;
-  height: 350px;
-  padding: 40px 50px 40px 50px;
+  height: 190px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -315,13 +321,15 @@ ul {
   background-size: contain;
   width: 156px;
   height: 90px;
+  width: 100px;
+  height: 60px;
 }
 .email-adress {
   font-family: 'novel_sans_proextrabold';
   text-transform: uppercase;
   color: #fff;
-  font-size: 17px;
-  margin-top: 30px;
+  font-size: 10px;
+  margin-top: 10px;
 }
 .footer-description {
   text-align: center;
@@ -356,7 +364,7 @@ ul {
   font-family: 'novel_sans_proextrabold';
   color: #fff;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 7px;
 }
 .social-media-icons {
   display: flex;
@@ -367,8 +375,8 @@ ul {
 .facebook-icon,
 .instagram-icon,
 .twitter-icon {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   border: 2px solid #fff;
 }
 .facebook-icon {
