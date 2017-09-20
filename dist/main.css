@@ -128,6 +128,11 @@ ul {
     font-size: 19px;
   }
 }
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .main-description {
+    font-size: 27px;
+  }
+}
 .issue-list {
   background-color: rgba(0,0,0,0.5);
   color: #fff;
@@ -209,6 +214,20 @@ ul {
   text-transform: uppercase;
   text-decoration: underline;
 }
+@media screen and (min-width: 768px) {
+  .issue-number {
+    font-size: 342px;
+    line-height: 353px;
+  }
+  .issue-title--number,
+  .issue-title--name {
+    font-size: 20px;
+  }
+  .issue-description {
+    font-size: 18px;
+    width: calc(100% - 116px);
+  }
+}
 @media screen and (orientation: landscape) {
   .issue-number {
     font-size: 240px;
@@ -227,6 +246,36 @@ ul {
   }
   .stocking-link {
     font-size: 12px;
+  }
+}
+@media screen and (orientation: landscape) and (min-width: 667px) {
+  .issue-description {
+    width: calc(100% - 115px);
+  }
+}
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .issue-number {
+    line-height: 324px;
+    font-size: 332px;
+  }
+  .issue-details {
+    height: 252px;
+  }
+  .issue-description {
+    font-size: 19px;
+  }
+  .purchase-button {
+    width: 118px;
+    font-size: 15px;
+    padding: 7px 11px;
+  }
+  .issue-selector-number {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .issue-description {
+    width: calc(100% - 358px);
   }
 }
 .community-section {
@@ -389,6 +438,43 @@ ul {
     padding: 7vh 10vw 0 10vw;
   }
 }
+@media screen and (orientation: landscape) and (min-width: 736px) {
+  .community-section {
+    height: 331vh;
+  }
+}
+@media screen and (orientation: landscape) and (min-width: 1024px) {
+  .community-section {
+    height: 193vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .community-section {
+    height: 125vh;
+    padding: 10vh 5vw 0vw 5vw;
+  }
+  .community-section--title h1 {
+    font-size: 41px;
+  }
+  .community-section--pin-icon {
+    width: 40px;
+    height: 70px;
+    margin: 35px auto 35px auto;
+  }
+  .community-section--testamonials-section {
+    flex-direction: row;
+  }
+  .testamonial-copy {
+    margin: 0px 20px;
+  }
+  .papersmiths-logo {
+    height: 56px;
+    background-position: 0px 18px;
+  }
+  .magculture-logo {
+    margin: 6px auto 23px auto;
+  }
+}
 .footer {
   background: #000;
   height: 190px;
@@ -501,5 +587,36 @@ ul {
   .elbow-grease-footer-image {
     width: 75px;
     height: 44px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    height: 200px;
+    padding: 40px 50px 40px 50px;
+    flex-direction: row;
+  }
+  .logo-section {
+    width: 15%;
+    align-items: flex-start;
+  }
+  .social-media-icons {
+    justify-content: flex-end;
+  }
+  .email-adress {
+    font-size: 7px;
+  }
+  .footer-description-heading {
+    display: block;
+    font-size: 11px;
+  }
+  .footer-description-divider {
+    display: block;
+  }
+  .footer-description-copy {
+    display: block;
+    font-size: 11px;
+  }
+  .social-media-icons {
+    width: 200px;
   }
 }
