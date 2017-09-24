@@ -46,11 +46,15 @@ ul {
 .main-wrapper {
   background-color: #fff;
   background-image: url("./assets/hands.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
 }
 .header {
   background: rgba(0,0,0,0);
@@ -100,10 +104,11 @@ ul {
     font-size: 23px;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 676px) {
   .title-text {
-    font-size: 40px;
-    width: 50%;
+    font-size: 58px;
+    width: 88%;
+    height: 193px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -120,7 +125,7 @@ ul {
 }
 .main-description {
   background: #fff;
-  padding: 0px 7%;
+  padding: 0px 18%;
   font-family: 'novel_proregular';
   font-size: 20px;
   text-align: center;
@@ -150,7 +155,8 @@ ul {
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .main-description {
-    font-size: 27px;
+    padding: 0px 13%;
+    font-size: 33px;
   }
 }
 .issue-list {
