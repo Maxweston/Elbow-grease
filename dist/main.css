@@ -89,6 +89,7 @@ ul {
   height: 139px;
   text-align: center;
   display: flex;
+  width: 65%;
 }
 @media screen and (orientation: landscape) {
   .title-logo {
@@ -102,11 +103,13 @@ ul {
 }
 @media screen and (min-width: 1024px) {
   .title-logo {
-    width: 154px;
-    height: 91px;
+    width: 133px;
+    height: 78px;
   }
   .title-text {
-    font-size: 41px;
+    font-size: 64px;
+    height: 184px;
+    letter-spacing: 5px;
   }
 }
 .main-description {
