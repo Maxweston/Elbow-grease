@@ -9,6 +9,7 @@
   // flex-direction row
   flex-direction column
   justify-content space-between
+  box-sizing: border-box;
 
 .logo-section
   display flex
@@ -38,10 +39,11 @@
   margin-top 10px
 
 .footer-description
-  text-align center
+  text-align left
   display flex
   flex-direction column
   justify-content space-between
+  font-family $regaular-font
 
 .footer-description-heading
   font-family $bold-font
@@ -148,16 +150,49 @@
 
 @media screen and (min-width: 1024px)
   .footer
-    height 200px
-    padding 40px 50px 40px 50px
+    height 400px
+    // padding 40px 50px 40px 50px
+    padding 90px 140px 90px 140px
     flex-direction row
 
   .logo-section
-    width 15%
+    // width 15%
+    width 220px
     align-items flex-start
+    flex 0 0 auto
+
+  .elbow-grease-footer-image
+    width 150px
+    height 87px
+
+  .footer-description
+    color white
+    font-size 14px
+    font-family $regaular-sans-font
+
+  .social-media-title-line
+    display block
 
   .social-media-icons
     justify-content flex-end
+
+  .facebook-link
+  .instagram-link
+  .twitter-link
+    display block
+
+  .facebook-icon
+  .instagram-icon
+  .twitter-icon
+    border none
+    display: inline-block;
+
+  .social-media-text
+    color white
+    text-decoration none
+    text-transform uppercase
+    font-family $bold-font
+    display: inline-block
 
   .email-adress
     font-size 7px
@@ -175,3 +210,6 @@
 
   .social-media-icons
     width 200px
+
+  .footer-description-and-credits
+    width 220px
