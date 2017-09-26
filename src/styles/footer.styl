@@ -155,6 +155,7 @@
     padding 90px 140px 90px 140px
     flex-direction row
 
+// Desktop logo column
   .logo-section
     // width 15%
     width 220px
@@ -170,8 +171,23 @@
     font-size 14px
     font-family $regaular-sans-font
 
+// Desktop Social Media Collumn
+  .social-media-section d
+    display flex
+    flex-direction column
+    justify-content flex-start
+
   .social-media-title-line
     display block
+    color white
+    &:nth-child(1)
+      font-family $bold-font
+      text-transform uppercase
+    &:nth-child(2)
+      margin 5px 0
+      font-family $regaular-sans-font
+      text-transform uppercase
+
 
   .social-media-icons
     justify-content flex-end
@@ -181,11 +197,27 @@
   .twitter-link
     display block
 
+  .facebook-link
+    margin 15px 0 0 0
+
+  .instagram-link
+  .twitter-link
+    margin 10px 0 0 0
+
   .facebook-icon
   .instagram-icon
   .twitter-icon
     border none
     display: inline-block;
+    vertical-align middle
+    background-position 0px 0px
+
+  .instagram-icon
+    margin 0px
+
+  // .facebook-icon
+  //   .social-media-text
+  //     margin 0px 0px 0px 10px
 
   .social-media-text
     color white
@@ -193,6 +225,7 @@
     text-transform uppercase
     font-family $bold-font
     display: inline-block
+    margin 0px 0px 0px 10px
 
   .email-adress
     font-size 7px
