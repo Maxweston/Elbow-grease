@@ -1,54 +1,44 @@
 .footer
   background black
-  // height 200px
-  // height 240px
   height 190px
-  // padding 40px 50px 40px 50px
   padding 20px
   display flex
-  // flex-direction row
   flex-direction column
   justify-content space-between
   box-sizing: border-box;
 
 .logo-section
   display flex
-  flex-direction column
-  justify-content space-between
+  flex-direction row
+  justify-content center
   align-items center
-  // width 17%
 
 .elbow-grease-footer-image
   background url('./assets/elbow-grease-white.svg')
   background-repeat no-repeat
   background-size contain
-  // width 106px
   width 156px
-  // height 61px
   height 90px
   width 100px
   height 60px
 
-.email-adress
-  font-family $bold-font
-  text-transform uppercase
-  color white
-  // font-size 9px
-  // font-size 17px
-  font-size 10px
-  margin-top 10px
-
 .footer-description
-  text-align left
+  display none
+
+.social-media-section
   display flex
-  flex-direction column
-  justify-content space-between
-  font-family $regaular-font
+  flex-direction row
+  justify-content center
+
+.social-media-title-line
+  display none
+
+.social-media-text
+  display none
 
 .footer-description-heading
   font-family $bold-font
   color white
-  // font-size 11px
   font-size 19px
   display none
 
@@ -57,8 +47,6 @@
   width 63%
   margin 0 auto
   font-family $regaular-font
-  // font-size 11px
-  // font-size 24px
   width 300px
   display none
   font-size 35px
@@ -70,28 +58,15 @@
   height 2px
   display none
 
-.footer-copyright
-  font-family $bold-font
-  color white
-  text-transform uppercase
-  // font-size 9px
-  // font-size 15px
-  font-size 7px
-
 .social-media-icons
-  // width 200px
   display flex
   flex-direction row
   align-items flex-end
-  // align-items center
-  // justify-content flex-end
   justify-content center
 
 .facebook-icon
 .instagram-icon
 .twitter-icon
-  // width 40px
-  // height 40px
   width 22px
   height 22px
   border 1px solid white
@@ -101,43 +76,37 @@
   color white
   background-image url('./assets/facebook.svg')
   background-repeat no-repeat
-  // height 17px
-  // width 17px
   padding 0px
   display block
   background-size 70%
-  // background-position 2px 3px
-  // background-position 6px 5px
   box-sizing border-box
-  // border 1px solid white
 
 .instagram-icon
   background-image url('./assets/instagram.svg')
   background-repeat no-repeat
-  // height 17px
-  // width 17px
   padding 0px
   display block
   background-size 70%
-  // background-position 3px 3px
-  // background-position 6px 5px
   box-sizing border-box
-  // border 1px solid white
-  // margin 0px 10px
   margin 0px 15px
 
 .twitter-icon
   background-image url('./assets/twitter.svg')
   background-repeat no-repeat
-  // height 17px
-  // width 17px
   padding 0px
   display block
   background-size 70%
-  // background-position 3px 3px
-  // background-position: 6px 5px
   box-sizing border-box
-  // border 1px solid white
+
+.credits
+  display none
+
+.footer-copyright
+  text-align center
+  font-size 14px
+  font-family $regaular-sans-font
+  color white
+  text-transform uppercase
 
 @media screen and (orientation: landscape)
   .footer
@@ -150,15 +119,16 @@
 @media screen and (min-width: 1024px)
   .footer
     height 400px
-    // padding 40px 50px 40px 50px
     padding 110px 140px 110px 140px
     flex-direction row
 
-// Desktop logo column
+  // Desktop logo column
   .logo-section
-    // width 15%
     width 220px
+    justify-content space-between
     align-items flex-start
+    display flex
+    flex-direction column
     flex 0 0 auto
 
   .elbow-grease-footer-image
@@ -166,11 +136,13 @@
     height 87px
 
   .footer-description
+    display block
     color white
+    text-align left
     font-size 14px
     font-family $regaular-sans-font
 
-// Desktop Social Media Collumn
+    // Desktop Social Media Collumn
   .social-media-section
     display flex
     flex-direction column
@@ -185,8 +157,6 @@
     &:nth-child(2)
       margin 5px 0
       font-family $regaular-sans-font
-      // text-transform uppercase
-
 
   .social-media-icons
     justify-content flex-end
@@ -214,10 +184,6 @@
   .instagram-icon
     margin 0px
 
-  // .facebook-icon
-  //   .social-media-text
-  //     margin 0px 0px 0px 10px
-
   .social-media-text
     color white
     text-decoration none
@@ -241,7 +207,9 @@
     font-size 14px
     & a
       color white
-      // text-decoration none
+
+  .credits
+    display block
 
   .video-text
   .site-build-text
@@ -269,6 +237,4 @@
   .footer-copyright
     font-family $regaular-sans-font
     font-size 14px
-
-  // .social-media-icons
-  //   width 200px
+    text-align left

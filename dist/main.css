@@ -512,8 +512,8 @@ ul {
 }
 .logo-section {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 .elbow-grease-footer-image {
@@ -525,19 +525,19 @@ ul {
   width: 100px;
   height: 60px;
 }
-.email-adress {
-  font-family: 'novel_sans_proextrabold';
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 10px;
-  margin-top: 10px;
-}
 .footer-description {
-  text-align: left;
+  display: none;
+}
+.social-media-section {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-family: 'novel_proregular';
+  flex-direction: row;
+  justify-content: center;
+}
+.social-media-title-line {
+  display: none;
+}
+.social-media-text {
+  display: none;
 }
 .footer-description-heading {
   font-family: 'novel_sans_proextrabold';
@@ -560,12 +560,6 @@ ul {
   background: #fff;
   height: 2px;
   display: none;
-}
-.footer-copyright {
-  font-family: 'novel_sans_proextrabold';
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 7px;
 }
 .social-media-icons {
   display: flex;
@@ -607,6 +601,16 @@ ul {
   background-size: 70%;
   box-sizing: border-box;
 }
+.credits {
+  display: none;
+}
+.footer-copyright {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'novel_sans_proregular';
+  color: #fff;
+  text-transform: uppercase;
+}
 @media screen and (orientation: landscape) {
   .footer {
     height: 157px;
@@ -622,113 +626,122 @@ ul {
     padding: 110px 140px 110px 140px;
     flex-direction: row;
   }
-}
-.logo-section {
-  width: 220px;
-  align-items: flex-start;
-  flex: 0 0 auto;
-}
-.elbow-grease-footer-image {
-  width: 150px;
-  height: 87px;
-}
-.footer-description {
-  color: #fff;
-  font-size: 14px;
-  font-family: 'novel_sans_proregular';
-}
-.social-media-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.social-media-title-line {
-  display: block;
-  color: #fff;
-}
-.social-media-title-line:nth-child(1) {
-  font-family: 'novel_sans_proregular';
-  text-transform: uppercase;
-}
-.social-media-title-line:nth-child(2) {
-  margin: 5px 0;
-  font-family: 'novel_sans_proregular';
-}
-.social-media-icons {
-  justify-content: flex-end;
-}
-.facebook-link,
-.instagram-link,
-.twitter-link {
-  display: block;
-}
-.facebook-link {
-  margin: 15px 0 0 0;
-}
-.instagram-link,
-.twitter-link {
-  margin: 10px 0 0 0;
-}
-.facebook-icon,
-.instagram-icon,
-.twitter-icon {
-  border: none;
-  display: inline-block;
-  vertical-align: middle;
-  background-position: 0px 0px;
-}
-.instagram-icon {
-  margin: 0px;
-}
-.social-media-text {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'novel_sans_proextrabold';
-  display: inline-block;
-  margin: 0px 0px 0px 10px;
-}
-.email-adress {
-  font-size: 7px;
-}
-.footer-description-and-credits {
-  width: 240px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.footer-description-heading {
-  display: block;
-  font-family: 'novel_sans_proregular';
-  font-size: 14px;
-}
-.footer-description-heading a {
-  color: #fff;
-}
-.video-text,
-.site-build-text {
-  display: inline-block;
-  font-family: 'novel_sans_proregular';
-  color: #fff;
-  text-transform: uppercase;
-}
-.video-credit,
-.site-build-credit {
-  color: #fff;
-  display: inline-block;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: 'novel_sans_proextrabold';
-  margin: 0px 0px 0px 10px;
-}
-.footer-description-divider {
-  display: block;
-}
-.footer-description-copy {
-  display: block;
-  font-size: 11px;
-}
-.footer-copyright {
-  font-family: 'novel_sans_proregular';
-  font-size: 14px;
+  .logo-section {
+    width: 220px;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+  }
+  .elbow-grease-footer-image {
+    width: 150px;
+    height: 87px;
+  }
+  .footer-description {
+    display: block;
+    color: #fff;
+    text-align: left;
+    font-size: 14px;
+    font-family: 'novel_sans_proregular';
+  }
+  .social-media-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .social-media-title-line {
+    display: block;
+    color: #fff;
+  }
+  .social-media-title-line:nth-child(1) {
+    font-family: 'novel_sans_proregular';
+    text-transform: uppercase;
+  }
+  .social-media-title-line:nth-child(2) {
+    margin: 5px 0;
+    font-family: 'novel_sans_proregular';
+  }
+  .social-media-icons {
+    justify-content: flex-end;
+  }
+  .facebook-link,
+  .instagram-link,
+  .twitter-link {
+    display: block;
+  }
+  .facebook-link {
+    margin: 15px 0 0 0;
+  }
+  .instagram-link,
+  .twitter-link {
+    margin: 10px 0 0 0;
+  }
+  .facebook-icon,
+  .instagram-icon,
+  .twitter-icon {
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: 0px 0px;
+  }
+  .instagram-icon {
+    margin: 0px;
+  }
+  .social-media-text {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'novel_sans_proextrabold';
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+  }
+  .email-adress {
+    font-size: 7px;
+  }
+  .footer-description-and-credits {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer-description-heading {
+    display: block;
+    font-family: 'novel_sans_proregular';
+    font-size: 14px;
+  }
+  .footer-description-heading a {
+    color: #fff;
+  }
+  .credits {
+    display: block;
+  }
+  .video-text,
+  .site-build-text {
+    display: inline-block;
+    font-family: 'novel_sans_proregular';
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .video-credit,
+  .site-build-credit {
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'novel_sans_proextrabold';
+    margin: 0px 0px 0px 10px;
+  }
+  .footer-description-divider {
+    display: block;
+  }
+  .footer-description-copy {
+    display: block;
+    font-size: 11px;
+  }
+  .footer-copyright {
+    font-family: 'novel_sans_proregular';
+    font-size: 14px;
+    text-align: left;
+  }
 }
