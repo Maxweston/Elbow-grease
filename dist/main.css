@@ -542,7 +542,6 @@ ul {
 .footer-description-heading {
   font-family: 'novel_sans_proextrabold';
   color: #fff;
-  text-transform: uppercase;
   font-size: 19px;
   display: none;
 }
@@ -620,7 +619,7 @@ ul {
 @media screen and (min-width: 1024px) {
   .footer {
     height: 400px;
-    padding: 90px 140px 90px 140px;
+    padding: 110px 140px 110px 140px;
     flex-direction: row;
   }
 }
@@ -638,23 +637,22 @@ ul {
   font-size: 14px;
   font-family: 'novel_sans_proregular';
 }
-.social-media-section d {
+.social-media-section {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 .social-media-title-line {
   display: block;
   color: #fff;
 }
 .social-media-title-line:nth-child(1) {
-  font-family: 'novel_sans_proextrabold';
+  font-family: 'novel_sans_proregular';
   text-transform: uppercase;
 }
 .social-media-title-line:nth-child(2) {
   margin: 5px 0;
   font-family: 'novel_sans_proregular';
-  text-transform: uppercase;
 }
 .social-media-icons {
   justify-content: flex-end;
@@ -693,9 +691,35 @@ ul {
 .email-adress {
   font-size: 7px;
 }
+.footer-description-and-credits {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .footer-description-heading {
   display: block;
-  font-size: 11px;
+  font-family: 'novel_sans_proregular';
+  font-size: 14px;
+}
+.footer-description-heading a {
+  color: #fff;
+}
+.video-text,
+.site-build-text {
+  display: inline-block;
+  font-family: 'novel_sans_proregular';
+  color: #fff;
+  text-transform: uppercase;
+}
+.video-credit,
+.site-build-credit {
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'novel_sans_proextrabold';
+  margin: 0px 0px 0px 10px;
 }
 .footer-description-divider {
   display: block;
@@ -704,9 +728,7 @@ ul {
   display: block;
   font-size: 11px;
 }
-.social-media-icons {
-  width: 200px;
-}
-.footer-description-and-credits {
-  width: 220px;
+.footer-copyright {
+  font-family: 'novel_sans_proregular';
+  font-size: 14px;
 }

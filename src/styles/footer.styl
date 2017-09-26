@@ -48,7 +48,6 @@
 .footer-description-heading
   font-family $bold-font
   color white
-  text-transform uppercase
   // font-size 11px
   font-size 19px
   display none
@@ -152,7 +151,7 @@
   .footer
     height 400px
     // padding 40px 50px 40px 50px
-    padding 90px 140px 90px 140px
+    padding 110px 140px 110px 140px
     flex-direction row
 
 // Desktop logo column
@@ -172,21 +171,21 @@
     font-family $regaular-sans-font
 
 // Desktop Social Media Collumn
-  .social-media-section d
+  .social-media-section
     display flex
     flex-direction column
-    justify-content flex-start
+    justify-content space-between
 
   .social-media-title-line
     display block
     color white
     &:nth-child(1)
-      font-family $bold-font
+      font-family $regaular-sans-font
       text-transform uppercase
     &:nth-child(2)
       margin 5px 0
       font-family $regaular-sans-font
-      text-transform uppercase
+      // text-transform uppercase
 
 
   .social-media-icons
@@ -230,9 +229,35 @@
   .email-adress
     font-size 7px
 
+  .footer-description-and-credits
+    width 240px
+    display flex
+    flex-direction column
+    justify-content space-between
+
   .footer-description-heading
     display block
-    font-size 11px
+    font-family $regaular-sans-font
+    font-size 14px
+    & a
+      color white
+      // text-decoration none
+
+  .video-text
+  .site-build-text
+    display inline-block
+    font-family $regaular-sans-font
+    color white
+    text-transform uppercase
+
+  .video-credit
+  .site-build-credit
+    color white
+    display inline-block
+    text-transform uppercase
+    text-decoration none
+    font-family $bold-font
+    margin 0px 0px 0px 10px
 
   .footer-description-divider
     display block
@@ -241,8 +266,9 @@
     display block
     font-size 11px
 
-  .social-media-icons
-    width 200px
+  .footer-copyright
+    font-family $regaular-sans-font
+    font-size 14px
 
-  .footer-description-and-credits
-    width 220px
+  // .social-media-icons
+  //   width 200px
