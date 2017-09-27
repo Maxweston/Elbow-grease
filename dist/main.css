@@ -333,6 +333,22 @@ ul {
   height: 33px;
   margin: 11px auto 38px auto;
 }
+.community-section--stockist-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 0 0 auto;
+}
+.stockist-heading {
+  font-family: 'novel_sans_proextrabold';
+  font-size: 18px;
+  margin: 10px 0px 30px 0px;
+  text-align: center;
+}
+.stockist {
+  text-decoration: none;
+  color: #000;
+}
 .community-section--testamonials-section {
   display: flex;
   flex-direction: column;
