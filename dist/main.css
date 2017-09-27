@@ -338,6 +338,13 @@ ul {
   flex-direction: column;
   width: 100%;
   flex: 0 0 auto;
+  margin: 0px 0px 50px 0px;
+}
+.stockist-section--the-south,
+.stockist-section--the-north {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .stockist-heading {
   font-family: 'novel_sans_proextrabold';
@@ -348,6 +355,29 @@ ul {
 .stockist {
   text-decoration: none;
   color: #000;
+  margin: 10px 0px;
+}
+.stockist--stockist-title {
+  font-family: 'novel_sans_proextrabold';
+}
+.stockist--stockist-location {
+  font-family: 'novel_sans_proregular';
+  font-size: 14px;
+}
+.divider {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 20px auto;
+}
+.stockist-contact {
+  font-family: 'novel_proregular';
+}
+.stockist-email {
+  font-family: 'novel_sans_proextrabold';
+  text-decoration: none;
+  color: #000;
+  margin: 10px 0px 0px 0px;
 }
 .community-section--testamonials-section {
   display: flex;
