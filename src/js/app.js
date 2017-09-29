@@ -83,32 +83,104 @@ function replay () {
 //   document.body.querySelector('video').load();
 //   document.body.querySelector('video').play();
 // });
+// var sliderState = {
+//   currentActiveSlideIndex: 0
+//   slidesOnleft: [],
+//   slidesOnRight: [1]
+// }
 
-function checkClassExicts (element, checkClass) {
-  var element = element.classList
-  Object.keys(element).forEach(function (key) {
-    console.log(element[key])
-    // if (element[key] === checkClass) {
-    //   return true
-    // }
+function hasClass(el, className) {
+  if (el.classList)
+    return el.classList.contains(className)
+  else
+    return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'))
+}
+
+function addClass(el, className) {
+  if (el.classList)
+    el.classList.add(className)
+  else if (!hasClass(el, className)) el.className += " " + className
+}
+
+function removeClass(el, className) {
+  if (el.classList)
+    el.classList.remove(className)
+  else if (hasClass(el, className)) {
+    var reg = new RegExp('(\\s|^)' + className + '(\\s|$)')
+    el.className=el.className.replace(reg, ' ')
+  }
+}
+
+// function checkClassExicts (element, checkClass) {
+//   var element = element.classList
+//   var foundMatch = false
+//   // console.log(element)
+//   Object.keys(element).forEach(function (key) {
+//     // console.log(element[key])
+//     if (element[key] === checkClass) {
+//       // console.log('here')
+//       foundMatch = true
+//       return
+//     }
+//   })
+//
+//   return foundMatch
+// }
+
+function getActiveIndex () {
+  var slides = document.querySelector('.issue-slider-section').children
+  var position
+  Object.keys(slides).forEach(function (key) {
+    if (hasClass(slides[key], 'active-slide')) {
+      position = key
+      return
+    }
   })
+
+  return position
+}
+
+function getCurrentIndex (slide) {
+
 }
 
 function issueSlider () {
   console.log(document.querySelector('.issue-selector').children)
   var issues = document.querySelector('.issue-selector').children
 
+  var slides = document.querySelector('.issue-slider-section').children
+  console.log(slides)
+
   Object.keys(issues).forEach(function (issue) {
     // console.log(issue)
     // console.log(issues[issue])
     issues[issue].addEventListener('click', function () {
       // console.log('clicked' + issue)
-      console.log(issues[issue].classList)
-      console.log(checkClassExicts(issues[issue], 'active-slide'))
+      // console.log(issues[issue].classList)
+      console.log(slides[issue])
+      // console.log(checkClassExicts(slides[issue], 'active-slide'))
       // if(issues[issue].ha)
+      sliderController(slides[issue], issue)
     })
   })
 
+}
+
+function sliderController (selectedSlide, index) {
+  console.log(selectedSlide)
+  console.log(hasClass(selectedSlide, 'active-slide'))
+  if (!hasClass(selectedSlide, 'active-slide')) {
+    console.log(getActiveIndex())
+    var currentActiveIndex = getActiveIndex()
+    var currentSlide = document.querySelector('.issue-slider-section').children[currentActiveIndex]
+    var nextCurrentSlide = document.querySelector('.issue-slider-section').children[index]
+    removeClass(currentSlide, 'active-slide')
+    // addClass(nextCurrentSlide, 'active-slide')
+    if (currentActiveIndex < index)
+      addClass(currentSlide, 'slide-on-left')
+      addClass(nextCurrentSlide, 'active-slide')
+    // document.querySelector('.issue-slider-section').children[currentActiveIndex].removeClass('active-slide')
+  }
 }
 
 issueSlider()
