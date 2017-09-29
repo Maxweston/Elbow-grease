@@ -175,7 +175,8 @@ ul {
   text-align: right;
   line-height: 302px;
 }
-.issue-one {
+.issue-one,
+.issue-two {
   display: flex;
   flex-direction: row;
   justify-content: center;
