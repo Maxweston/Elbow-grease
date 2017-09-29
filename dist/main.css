@@ -276,7 +276,7 @@ ul {
 }
 @media screen and (orientation: landscape) and (min-width: 667px) {
   .issue-description {
-    width: calc(100% - 115px);
+    width: calc(100% - 297px);
   }
 }
 @media screen and (min-width: 1024px) and (orientation: landscape) {
@@ -305,7 +305,7 @@ ul {
   }
 }
 .community-section {
-  height: 307vh;
+  height: 345vh;
   display: flex;
   flex-direction: column;
   padding: 7vh 7vw 0 7vw;
@@ -473,14 +473,43 @@ ul {
   text-transform: uppercase;
   font-size: 11px;
 }
-@media screen and (min-width: 375px) {
-  .community-section {
-    height: 262vh;
+@media screen and (min-width: 600px) {
+  .community-section--title h1 {
+    font-size: 45px;
   }
-}
-@media screen and (min-width: 414px) {
-  .community-section {
-    height: 240vh;
+  .community-section--pin-icon {
+    width: 55px;
+    height: 56px;
+    margin: 55px auto;
+  }
+  .community-section--stockist-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    width: 90%;
+    margin: 0px 0px 150px 0px;
+  }
+  .stockist-section--the-south {
+    width: 186px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .stockist-section--the-north {
+    width: 224px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .stockist-heading {
+    text-align: left;
+    font-size: 27px;
+  }
+  .stockist-contact {
+    width: 200px;
+  }
+  .divider {
+    margin: 20px 0px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -492,19 +521,11 @@ ul {
   .community-section {
     height: 485vh;
   }
-  .community-section--pin-icon {
-    width: 45px;
-    height: 44px;
-    margin: 11px auto 20px auto;
-  }
   .testamonial-wrapper {
     margin-bottom: 70px;
   }
 }
 @media screen and (min-width: 667px) and (orientation: landscape) {
-  .community-section--pin-icon {
-    margin: 11px auto 15px auto;
-  }
   .community-section {
     height: 450vh;
     padding: 7vh 10vw 0 10vw;
@@ -529,8 +550,11 @@ ul {
 }
 @media screen and (min-width: 1024px) {
   .community-section {
-    height: 125vh;
+    height: 220vh;
     padding: 10vh 5vw 0vw 5vw;
+  }
+  .community-section--stockist-section {
+    width: 64%;
   }
   .community-section--title h1 {
     font-size: 41px;
