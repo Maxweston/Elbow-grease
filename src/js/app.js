@@ -176,9 +176,10 @@ function sliderController (selectedSlide, index) {
     var nextCurrentSlide = document.querySelector('.issue-slider-section').children[index]
     removeClass(currentSlide, 'active-slide')
     // addClass(nextCurrentSlide, 'active-slide')
-    if (currentActiveIndex < index)
+    if (currentActiveIndex < index) {
       addClass(currentSlide, 'slide-on-left')
       addClass(nextCurrentSlide, 'active-slide')
+    }
     // document.querySelector('.issue-slider-section').children[currentActiveIndex].removeClass('active-slide')
   }
 }
