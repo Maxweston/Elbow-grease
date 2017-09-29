@@ -158,5 +158,23 @@
     font-size 20px
 
 @media screen and (min-width: 1024px)
+  .issue-slider-section
+    height calc(100vh - 60px)
+    width 100%
+    position relative
+    overflow-x hidden
+
+  .issue-slider-section--slide
+    position absolute
+    height 100%
+    width 100%
+    transition transform 0.3s ease
+
+  .issue-slider-section--slide
+    transform translateX(100vw)
+
+  .issue-slider-section--slide.active-slide
+    transform translateX(0px)
+
   .issue-description
-      width: calc(100% - 358px);
+    width: 300px

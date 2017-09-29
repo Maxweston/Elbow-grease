@@ -83,3 +83,32 @@ function replay () {
 //   document.body.querySelector('video').load();
 //   document.body.querySelector('video').play();
 // });
+
+function checkClassExicts (element, checkClass) {
+  var element = element.classList
+  Object.keys(element).forEach(function (key) {
+    console.log(element[key])
+    // if (element[key] === checkClass) {
+    //   return true
+    // }
+  })
+}
+
+function issueSlider () {
+  console.log(document.querySelector('.issue-selector').children)
+  var issues = document.querySelector('.issue-selector').children
+
+  Object.keys(issues).forEach(function (issue) {
+    // console.log(issue)
+    // console.log(issues[issue])
+    issues[issue].addEventListener('click', function () {
+      // console.log('clicked' + issue)
+      console.log(issues[issue].classList)
+      console.log(checkClassExicts(issues[issue], 'active-slide'))
+      // if(issues[issue].ha)
+    })
+  })
+
+}
+
+issueSlider()
