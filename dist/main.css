@@ -175,7 +175,8 @@ ul {
   text-align: right;
   line-height: 302px;
 }
-.issue-one {
+.issue-one,
+.issue-two {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -300,8 +301,29 @@ ul {
   }
 }
 @media screen and (min-width: 1024px) {
+  .issue-slider-section {
+    height: calc(100vh - 60px);
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .issue-slider-section--slide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  .slide-on-right {
+    transform: translateX(100vw);
+  }
+  .slide-on-left {
+    transform: translateX(-100vw);
+  }
+  .issue-slider-section--slide.active-slide {
+    transform: translateX(0px);
+  }
   .issue-description {
-    width: calc(100% - 358px);
+    width: 300px;
   }
 }
 .community-section {
@@ -527,13 +549,20 @@ ul {
 }
 @media screen and (min-width: 667px) and (orientation: landscape) {
   .community-section {
-    height: 400vh;
+    height: 450vh;
     padding: 7vh 10vw 0 10vw;
   }
 }
 @media screen and (orientation: landscape) and (min-width: 736px) {
   .community-section {
     height: 331vh;
+  }
+  .community-section--stockist-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .stockist-heading {
+    text-align: left;
   }
 }
 @media screen and (orientation: landscape) and (min-width: 1024px) {
