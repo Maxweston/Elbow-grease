@@ -89,6 +89,51 @@ function replay () {
 //   slidesOnRight: [1]
 // }
 
+// Description Modal Logic
+
+function hardWorkModal () {
+  var modal = document.getElementsByClassName('hard-work-modal')
+  var targetElement = document.getElementsByClassName('hard-work')
+  targetElement[0].addEventListener('mouseenter', function () {
+    modal[0].style.display = "block"
+  })
+
+  targetElement[0].addEventListener('mouseleave', function () {
+    modal[0].style.display = "none"
+  })
+}
+
+function strugglesModal () {
+  var modal = document.getElementsByClassName('struggles-modal')
+  var targetElement = document.getElementsByClassName('struggles')
+  targetElement[0].addEventListener('mouseenter', function () {
+    modal[0].style.display = "block"
+  })
+
+  targetElement[0].addEventListener('mouseleave', function () {
+    modal[0].style.display = "none"
+  })
+}
+
+function adversityModal () {
+  var modal = document.getElementsByClassName('face-adversity-modal')
+  var targetElement = document.getElementsByClassName('face-advercity')
+  targetElement[0].addEventListener('mouseenter', function () {
+    modal[0].style.display = "block"
+  })
+
+  targetElement[0].addEventListener('mouseleave', function () {
+    modal[0].style.display = "none"
+  })
+}
+
+if (!browserSettings.isMobile) {
+  console.log('loading click events')
+  hardWorkModal()
+  strugglesModal()
+  adversityModal()
+}
+
 function hasClass(el, className) {
   if (el.classList)
     return el.classList.contains(className)

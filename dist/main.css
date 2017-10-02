@@ -132,12 +132,26 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 .main-description p:nth-of-type(2) {
   margin-top: 100px;
 }
 .main-description span {
   text-decoration: underline;
+}
+.hard-work-modal,
+.struggles-modal,
+.face-adversity-modal {
+  display: none;
+  width: 250px;
+  height: 400px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 @media screen and (orientation: landscape) {
   .main-description {
