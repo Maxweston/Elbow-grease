@@ -9,33 +9,33 @@
 .issue-number
   display inline-block
   font-family $regaular-sans-font
-  // font-size 400px
-  // font-size 600px
   font-size 200px
   width: 50%
   text-align right
   line-height 302px
   display none
-  // line-height 467px
 
 .issue-one-mobile-image
-  width 200px
-  height 200px
-
-.issue-title--name
-  display none
+  width: calc(100vw - 80px);
+  margin 0px 0px 10px 0px
 
 .issue-slider-section
-  height calc(100vh - 100px)
+  height calc(100vh - 50px)
   width 100%
   position relative
   overflow-x hidden
+  order 2
 
 .issue-slider-section--slide
   position absolute
   height 100%
   width 100%
   transition transform 0.3s ease
+  padding 0px 40px
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
 .slide-on-right
   transform translateX(100vw)
@@ -49,85 +49,62 @@
 .issue-description
   width: 300px
 
-.issue-one
-.issue-two
-  display flex
-  flex-direction row
-  justify-content center
-  align-items center
-
 .issue-details
   vertical-align top
-  // height 220px
-  // height 235px
-  // height 260px
-  // width 50%
   display flex
   flex-direction column
   justify-content space-between
 
 .issue-title--number
   font-family $regaular-sans-font
-  // font-size 20px
-  // font-size 40px
   font-size 16px
   letter-spacing: 1.1px
   text-transform uppercase
-  display none
+  margin 0px 0px 10px 0px
 
 .issue-title--name
   font-family $bold-font
   text-transform: uppercase
-  // font-size 20px
-  // font-size 35px
   font-size 16px
   letter-spacing 1.1px
+  margin 0px 0px 10px 0px
 
 .issue-description
-  font-family: $regaular-font
-  // font-size 20px
-  // font-size 31px
+  font-family $regaular-font
   font-size 16px
-  // width 40%
-  // width calc(100% - 131px)
   width calc(100% - 20px)
+  margin 0px 0px 10px 0px
 
 .purchase-button
   font-family $bold-font
-  // font-size 18px
-  // font-size 29px
   font-size 14px
   letter-spacing: 1.1px
   text-transform uppercase
-  // width 150px
-  // width 211px
   width 106px
   border 2px solid white
-  // padding 5px 17px
   padding 4px 7px
 
 .issue-selector-section
   width 100%
-  // height 60px
   text-align center
+  order 1
+  height 70px
+  display flex
+  flex-direction column
+  justify-content center
 
 .issue-selector
   list-style-type none
   text-align center
-  // margin 40px 0px 10px 0px
-  // margin 40px 0px 40px 0px
-  margin 0px 0px 10px 0px
 
 .issue-selector-number
   font-family $regaular-font
   display inline-block
   margin 0px 10px
-  // font-size 40px
   font-size 20px
   padding 0px 7px 0px 7px
 
 .active-issue
-  // border-bottom 7px solid white
   border-bottom 2px solid white
 
 .stocking-link
@@ -135,6 +112,7 @@
   font-size 14px
   text-transform uppercase
   text-decoration underline
+  display none
 
 @media screen and (min-width: 768px)
   .issue-number
@@ -192,6 +170,9 @@
     font-size 20px
 
 @media screen and (min-width: 1024px)
+  .mobile-issue-slider-header
+    display
+
   .issue-slider-section
     // height calc(100vh - 60px)
     width 100%
@@ -221,3 +202,6 @@
 
   .issue-description
     width: 300px
+
+  .stocking-link
+    display block

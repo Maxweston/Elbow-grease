@@ -127,7 +127,7 @@ ul {
   background: #fff;
   padding: 0px 18%;
   font-family: 'novel_proregular';
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -135,7 +135,7 @@ ul {
   position: relative;
 }
 .main-description p:nth-of-type(2) {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .main-description span {
   text-decoration: underline;
@@ -191,23 +191,26 @@ ul {
   display: none;
 }
 .issue-one-mobile-image {
-  width: 200px;
-  height: 200px;
-}
-.issue-title--name {
-  display: none;
+  width: calc(100vw - 80px);
+  margin: 0px 0px 10px 0px;
 }
 .issue-slider-section {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 50px);
   width: 100%;
   position: relative;
   overflow-x: hidden;
+  order: 2;
 }
 .issue-slider-section--slide {
   position: absolute;
   height: 100%;
   width: 100%;
   transition: transform 0.3s ease;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 .slide-on-right {
   transform: translateX(100vw);
@@ -221,13 +224,6 @@ ul {
 .issue-description {
   width: 300px;
 }
-.issue-one,
-.issue-two {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 .issue-details {
   vertical-align: top;
   display: flex;
@@ -239,18 +235,20 @@ ul {
   font-size: 16px;
   letter-spacing: 1.1px;
   text-transform: uppercase;
-  display: none;
+  margin: 0px 0px 10px 0px;
 }
 .issue-title--name {
   font-family: 'novel_sans_proextrabold';
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 1.1px;
+  margin: 0px 0px 10px 0px;
 }
 .issue-description {
   font-family: 'novel_proregular';
   font-size: 16px;
   width: calc(100% - 20px);
+  margin: 0px 0px 10px 0px;
 }
 .purchase-button {
   font-family: 'novel_sans_proextrabold';
@@ -264,11 +262,15 @@ ul {
 .issue-selector-section {
   width: 100%;
   text-align: center;
+  order: 1;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .issue-selector {
   list-style-type: none;
   text-align: center;
-  margin: 0px 0px 10px 0px;
 }
 .issue-selector-number {
   font-family: 'novel_proregular';
@@ -285,6 +287,7 @@ ul {
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: underline;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .issue-number {
@@ -366,9 +369,12 @@ ul {
   .issue-description {
     width: 300px;
   }
+  .stocking-link {
+    display: block;
+  }
 }
 .community-section {
-  height: 345vh;
+  height: 474vh;
   display: flex;
   flex-direction: column;
   padding: 7vh 7vw 0 7vw;
