@@ -188,6 +188,14 @@ ul {
   width: 50%;
   text-align: right;
   line-height: 302px;
+  display: none;
+}
+.issue-one-mobile-image {
+  width: 200px;
+  height: 200px;
+}
+.issue-title--name {
+  display: none;
 }
 .issue-slider-section {
   height: calc(100vh - 100px);
@@ -222,8 +230,6 @@ ul {
 }
 .issue-details {
   vertical-align: top;
-  height: 260px;
-  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -233,6 +239,7 @@ ul {
   font-size: 16px;
   letter-spacing: 1.1px;
   text-transform: uppercase;
+  display: none;
 }
 .issue-title--name {
   font-family: 'novel_sans_proextrabold';
@@ -344,11 +351,17 @@ ul {
     position: relative;
     overflow-x: hidden;
   }
+  .issue-number {
+    display: inline-block;
+  }
   .issue-slider-section--slide {
     position: absolute;
     height: 100%;
     width: 100%;
     transition: transform 0.3s ease;
+  }
+  .issue-title--name {
+    display: block;
   }
   .issue-description {
     width: 300px;

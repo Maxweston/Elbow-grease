@@ -18,6 +18,13 @@
   display none
   // line-height 467px
 
+.issue-one-mobile-image
+  width 200px
+  height 200px
+
+.issue-title--name
+  display none
+
 .issue-slider-section
   height calc(100vh - 100px)
   width 100%
@@ -53,8 +60,8 @@
   vertical-align top
   // height 220px
   // height 235px
-  height 260px
-  width 50%
+  // height 260px
+  // width 50%
   display flex
   flex-direction column
   justify-content space-between
@@ -66,6 +73,7 @@
   font-size 16px
   letter-spacing: 1.1px
   text-transform uppercase
+  display none
 
 .issue-title--name
   font-family $bold-font
@@ -198,6 +206,9 @@
     height 100%
     width 100%
     transition transform 0.3s ease
+
+  .issue-title--name
+    display block
 
   // .slide-on-right
   //   transform translateX(100vw)
