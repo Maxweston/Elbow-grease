@@ -15,7 +15,32 @@
   width: 50%
   text-align right
   line-height 302px
+  display none
   // line-height 467px
+
+.issue-slider-section
+  height calc(100vh - 100px)
+  width 100%
+  position relative
+  overflow-x hidden
+
+.issue-slider-section--slide
+  position absolute
+  height 100%
+  width 100%
+  transition transform 0.3s ease
+
+.slide-on-right
+  transform translateX(100vw)
+
+.slide-on-left
+  transform translateX(-100vw)
+
+.issue-slider-section--slide.active-slide
+  transform translateX(0px)
+
+.issue-description
+  width: 300px
 
 .issue-one
 .issue-two
@@ -160,10 +185,13 @@
 
 @media screen and (min-width: 1024px)
   .issue-slider-section
-    height calc(100vh - 60px)
+    // height calc(100vh - 60px)
     width 100%
     position relative
     overflow-x hidden
+
+  .issue-number
+    display inline-block
 
   .issue-slider-section--slide
     position absolute
@@ -171,14 +199,14 @@
     width 100%
     transition transform 0.3s ease
 
-  .slide-on-right
-    transform translateX(100vw)
+  // .slide-on-right
+  //   transform translateX(100vw)
+  //
+  // .slide-on-left
+  //   transform translateX(-100vw)
 
-  .slide-on-left
-    transform translateX(-100vw)
-
-  .issue-slider-section--slide.active-slide
-    transform translateX(0px)
+  // .issue-slider-section--slide.active-slide
+  //   transform translateX(0px)
 
   .issue-description
     width: 300px
