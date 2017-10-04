@@ -190,6 +190,15 @@ ul {
   line-height: 302px;
   display: none;
 }
+.question-mark {
+  background-image: url("./assets/question-mark.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 135px;
+  height: 178px;
+  display: block;
+  margin: 0px 0px 20px 0px;
+}
 .issue-one-mobile-image {
   width: calc(100vw - 80px);
   margin: 0px 0px 10px 0px;
@@ -236,6 +245,7 @@ ul {
   letter-spacing: 1.1px;
   text-transform: uppercase;
   margin: 0px 0px 10px 0px;
+  display: none;
 }
 .issue-title--name {
   font-family: 'novel_sans_proextrabold';
@@ -250,14 +260,20 @@ ul {
   width: calc(100% - 20px);
   margin: 0px 0px 10px 0px;
 }
-.purchase-button {
+.purchase-button,
+.preorder-button {
   font-family: 'novel_sans_proextrabold';
-  font-size: 14px;
+  font-size: 17px;
   letter-spacing: 1.1px;
   text-transform: uppercase;
-  width: 106px;
   border: 2px solid #fff;
   padding: 4px 7px;
+}
+.purchase-button {
+  width: 58px;
+}
+.preorder-button {
+  width: 132px;
 }
 .issue-selector-section {
   width: 100%;
@@ -300,7 +316,15 @@ ul {
   }
   .issue-description {
     font-size: 18px;
-    width: calc(100% - 116px);
+    width: 300px;
+  }
+  .issue-selector-number {
+    font-size: 24px;
+  }
+  .question-mark {
+    width: 199px;
+    height: 297px;
+    margin: 20px 0px 20px 0px;
   }
 }
 @media screen and (orientation: landscape) {

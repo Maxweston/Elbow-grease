@@ -15,6 +15,15 @@
   line-height 302px
   display none
 
+.question-mark
+  background-image: url('./assets/question-mark.svg')
+  background-size contain
+  background-repeat no-repeat
+  width 135px
+  height 178px
+  display block
+  margin 0px 0px 20px 0px
+
 .issue-one-mobile-image
   width: calc(100vw - 80px);
   margin 0px 0px 10px 0px
@@ -54,6 +63,7 @@
   display flex
   flex-direction column
   justify-content space-between
+  // height calc(100% - 86px)
 
 .issue-title--number
   font-family $regaular-sans-font
@@ -61,6 +71,7 @@
   letter-spacing: 1.1px
   text-transform uppercase
   margin 0px 0px 10px 0px
+  display none
 
 .issue-title--name
   font-family $bold-font
@@ -76,13 +87,19 @@
   margin 0px 0px 10px 0px
 
 .purchase-button
+.preorder-button
   font-family $bold-font
-  font-size 14px
+  font-size 17px
   letter-spacing: 1.1px
   text-transform uppercase
-  width 106px
   border 2px solid white
   padding 4px 7px
+
+.purchase-button
+  width 58px
+
+.preorder-button
+  width 132px
 
 .issue-selector-section
   width 100%
@@ -125,7 +142,15 @@
 
   .issue-description
     font-size 18px
-    width calc(100% - 116px)
+    width 300px
+
+  .issue-selector-number
+    font-size 24px
+
+  .question-mark
+    width 199px
+    height 297px
+    margin 20px 0px 20px 0px
 
 @media screen and (orientation: landscape)
   .issue-number
