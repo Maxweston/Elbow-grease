@@ -194,10 +194,10 @@ ul {
   background-image: url("./assets/question-mark.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 135px;
-  height: 178px;
+  width: 200px;
+  height: 261px;
   display: block;
-  margin: 0px 0px 20px 0px;
+  margin: 20px 0px 20px 0px;
 }
 .issue-one-mobile-image {
   width: calc(100vw - 80px);
