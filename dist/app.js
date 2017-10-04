@@ -193,6 +193,11 @@ function issueSlider () {
   console.log(document.querySelector('.issue-selector').children)
   var issues = document.querySelector('.issue-selector').children
 
+  // remove the box. WHATS IN THE BAAAXX!!!!!
+  console.log(typeof issues)
+  issues = issues.slice(1, issues.length)
+  console.log(issues)
+
   var slides = document.querySelector('.issue-slider-section').children
   console.log(slides)
 

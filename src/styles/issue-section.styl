@@ -26,7 +26,10 @@
 
 .issue-one-mobile-image
   width: calc(100vw - 80px);
-  margin 0px 0px 10px 0px
+  margin: 0px auto 10px auto;
+  max-height: 450px;
+  max-width: 450px;
+  display: block;
 
 .issue-slider-section
   height calc(100vh - 50px)
@@ -79,12 +82,14 @@
   font-size 16px
   letter-spacing 1.1px
   margin 0px 0px 10px 0px
+  max-width 450px
 
 .issue-description
   font-family $regaular-font
   font-size 16px
   width calc(100% - 20px)
   margin 0px 0px 10px 0px
+  max-width 450px
 
 .purchase-button
 .preorder-button
@@ -121,6 +126,17 @@
   font-size 20px
   padding 0px 7px 0px 7px
 
+.stocking-box
+  background-image url('./assets/stock-box.svg')
+  background-repeat no-repeat
+  width 22px
+  height 22px
+  display inline-block
+  vertical-align baseline
+  margin 0px 10px
+  padding 0px 7px 0px 7px
+  vertical-align sub
+
 .active-issue
   border-bottom 2px solid white
 
@@ -142,10 +158,13 @@
 
   .issue-description
     font-size 18px
-    width 300px
+    width 400px
 
   .issue-selector-number
     font-size 24px
+
+  .issue-one-mobile-image
+    margin: 0px auto 20px auto;
 
   .question-mark
     width 199px
@@ -160,9 +179,9 @@
   .issue-details
     height 181px
 
-  .issue-description
-    width calc(100% - 70px)
-    font-size 13px
+  // .issue-description
+  //   width calc(100% - 70px)
+  //   font-size 13px
 
   .issue-selector-number
     font-size 18px
@@ -170,10 +189,6 @@
 
   .stocking-link
     font-size 12px
-
-@media screen and (orientation: landscape) and (min-width 667px)
-  .issue-description
-    width calc(100% - 297px)
 
 @media screen and (min-width: 1024px) and (orientation: landscape)
   .issue-number
@@ -203,9 +218,16 @@
     width 100%
     position relative
     overflow-x hidden
+    order 1
+
+  .issue-slider-section--slide
+    flex-direction row
 
   .issue-number
     display inline-block
+
+  .issue-one-mobile-image
+    display none
 
   .issue-slider-section--slide
     position absolute
@@ -227,6 +249,15 @@
 
   .issue-description
     width: 300px
+
+  .purchase-button
+    width 60px
+
+  .issue-selector-section
+    order 2
+
+  .issue-selector
+    margin 0px 0px 10px 0px
 
   .stocking-link
     display block
