@@ -55,6 +55,10 @@ ul {
   height: auto;
   z-index: -100;
   transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out;
+}
+.fade-out {
+  opacity: 0;
 }
 .header {
   background: rgba(0,0,0,0);
@@ -642,7 +646,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .community-section {
-    height: 153vh;
+    height: 223vh;
   }
 }
 @media screen and (orientation: landscape) {
@@ -678,7 +682,7 @@ ul {
 }
 @media screen and (min-width: 1024px) {
   .community-section {
-    height: 220vh;
+    height: 183vh;
     padding: 10vh 5vw 0vw 5vw;
   }
   .community-section--stockist-section {

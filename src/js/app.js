@@ -6,6 +6,7 @@ var browserSettings = {
 
 // Get user agent
 var userAgent = navigator.userAgent
+var video = document.getElementsByTagName('video')[0]
 
 // determin if mobile.
 var isMobile = userAgent.match(/(Mobi)+/g)
@@ -16,6 +17,10 @@ if (isMobile !== null) {
 }
 
 console.log(browserSettings)
+
+if (isMobile) {
+  video.remove()
+}
 // if (userAgent = )
 
 // function replay() {
@@ -45,6 +50,16 @@ function replay () {
   //   console.log(document.getElementsByTagName('video')[0].currentTime)
   // }, 50)
 }
+
+function showVideoOnLoad () {
+  // var video = document.getElementsByTagName('video')[0]
+  // console.log(video)
+  video.addEventListener('canplaythrough', function () {
+    addClass(document.querySelector('.main-wrapper'), 'fade-out')
+  })
+}
+
+showVideoOnLoad()
 
 // var myVideo = document.getElementById('video');
 //
@@ -164,7 +179,6 @@ function issueSlider () {
       // console.log(issues[issue].classList)
       console.log(slides[issue])
       // console.log(checkClassExicts(slides[issue], 'active-slide'))
-      // if(issues[issue].ha)
       sliderController(slides[issue], issue)
     })
   })
@@ -190,7 +204,6 @@ function sliderController (selectedSlide, index) {
       addClass(currentSlide, 'slide-on-right')
       addClass(nextCurrentSlide, 'active-slide')
     }
-    // document.querySelector('.issue-slider-section').children[currentActiveIndex].removeClass('active-slide')
   }
 }
 
