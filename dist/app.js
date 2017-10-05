@@ -91,49 +91,6 @@ function replay () {
 
 // Description Modal Logic
 
-function hardWorkModal () {
-  var modal = document.getElementsByClassName('hard-work-modal')
-  var targetElement = document.getElementsByClassName('hard-work')
-  targetElement[0].addEventListener('mouseenter', function () {
-    modal[0].style.display = "block"
-  })
-
-  targetElement[0].addEventListener('mouseleave', function () {
-    modal[0].style.display = "none"
-  })
-}
-
-function strugglesModal () {
-  var modal = document.getElementsByClassName('struggles-modal')
-  var targetElement = document.getElementsByClassName('struggles')
-  targetElement[0].addEventListener('mouseenter', function () {
-    modal[0].style.display = "block"
-  })
-
-  targetElement[0].addEventListener('mouseleave', function () {
-    modal[0].style.display = "none"
-  })
-}
-
-function adversityModal () {
-  var modal = document.getElementsByClassName('face-adversity-modal')
-  var targetElement = document.getElementsByClassName('face-advercity')
-  targetElement[0].addEventListener('mouseenter', function () {
-    modal[0].style.display = "block"
-  })
-
-  targetElement[0].addEventListener('mouseleave', function () {
-    modal[0].style.display = "none"
-  })
-}
-
-if (!browserSettings.isMobile) {
-  console.log('loading click events')
-  hardWorkModal()
-  strugglesModal()
-  adversityModal()
-}
-
 function hasClass(el, className) {
   if (el.classList)
     return el.classList.contains(className)
@@ -193,9 +150,7 @@ function issueSlider () {
   console.log(document.querySelector('.issue-selector').children)
   var issues = document.querySelector('.issue-selector').children
 
-  // remove the box. WHATS IN THE BAAAXX!!!!!
-  console.log(typeof issues)
-  issues = issues.slice(1, issues.length)
+
   console.log(issues)
 
   var slides = document.querySelector('.issue-slider-section').children
@@ -218,6 +173,8 @@ function issueSlider () {
 
 function sliderController (selectedSlide, index) {
   console.log(selectedSlide)
+  // chnage active selector
+  changeSelectorActiveIndex(index)
   console.log(hasClass(selectedSlide, 'active-slide'))
   if (!hasClass(selectedSlide, 'active-slide')) {
     console.log(getActiveIndex())
@@ -229,9 +186,70 @@ function sliderController (selectedSlide, index) {
     if (currentActiveIndex < index) {
       addClass(currentSlide, 'slide-on-left')
       addClass(nextCurrentSlide, 'active-slide')
+    } else {
+      addClass(currentSlide, 'slide-on-right')
+      addClass(nextCurrentSlide, 'active-slide')
     }
     // document.querySelector('.issue-slider-section').children[currentActiveIndex].removeClass('active-slide')
   }
 }
 
+function changeSelectorActiveIndex (index) {
+  // get selectors in the list
+  var selectors = document.querySelector('.issue-selector').children
+  // loop all selectors in the list
+  Object.keys(selectors).forEach(function(selector) {
+    // remove active class from the current active
+    if (hasClass(selectors[selector], 'active-issue')) {
+      removeClass(selectors[selector], 'active-issue')
+    }
+  })
+
+  // add new class to the new active
+  addClass(selectors[index], 'active-issue')
+}
+
 issueSlider()
+
+function hardWorkModal () {
+  var modal = document.getElementsByClassName('hard-work-modal')
+  var targetElement = document.getElementsByClassName('hard-work')
+  targetElement[0].addEventListener('mouseenter', function () {
+    modal[0].style.display = "block"
+  })
+
+  targetElement[0].addEventListener('mouseleave', function () {
+    modal[0].style.display = "none"
+  })
+}
+
+function strugglesModal () {
+  var modal = document.getElementsByClassName('struggles-modal')
+  var targetElement = document.getElementsByClassName('struggles')
+  targetElement[0].addEventListener('mouseenter', function () {
+    modal[0].style.display = "block"
+  })
+
+  targetElement[0].addEventListener('mouseleave', function () {
+    modal[0].style.display = "none"
+  })
+}
+
+function adversityModal () {
+  var modal = document.getElementsByClassName('face-adversity-modal')
+  var targetElement = document.getElementsByClassName('face-advercity')
+  targetElement[0].addEventListener('mouseenter', function () {
+    modal[0].style.display = "block"
+  })
+
+  targetElement[0].addEventListener('mouseleave', function () {
+    modal[0].style.display = "none"
+  })
+}
+
+if (!browserSettings.isMobile) {
+  console.log('loading click events')
+  hardWorkModal()
+  strugglesModal()
+  adversityModal()
+}
