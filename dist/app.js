@@ -51,15 +51,15 @@ function replay () {
   // }, 50)
 }
 
-function showVideoOnLoad () {
-  // var video = document.getElementsByTagName('video')[0]
-  // console.log(video)
-  video.addEventListener('canplaythrough', function () {
-    addClass(document.querySelector('.main-wrapper'), 'fade-out')
-  })
-}
+// function showVideoOnLoad () {
+//   // var video = document.getElementsByTagName('video')[0]
+//   // console.log(video)
+//   video.addEventListener('canplaythrough', function () {
+//     addClass(document.querySelector('.main-wrapper'), 'fade-out')
+//   })
+// }
 
-showVideoOnLoad()
+// showVideoOnLoad()
 
 // var myVideo = document.getElementById('video');
 //

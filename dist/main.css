@@ -152,6 +152,14 @@ ul {
   height: 400px;
   margin: auto;
   position: absolute;
+}
+.hard-work-modal {
+  left: 10%;
+}
+.struggles-modal {
+  right: 10%;
+}
+.face-adversity-modal {
   top: 0;
   left: 0;
   bottom: 0;
@@ -174,7 +182,7 @@ ul {
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   .main-description {
     padding: 0px 13%;
-    font-size: 33px;
+    font-size: 27px;
   }
 }
 .issue-list {
@@ -263,7 +271,7 @@ ul {
   max-width: 450px;
 }
 .issue-description {
-  font-family: 'novel_proregular';
+  font-family: 'novel_sans_proregular';
   font-size: 16px;
   width: calc(100% - 20px);
   margin: 0px 0px 10px 0px;
@@ -396,9 +404,13 @@ ul {
     position: relative;
     overflow-x: hidden;
     order: 1;
+    height: calc(100vh - 307px);
   }
   .issue-slider-section--slide {
     flex-direction: row;
+  }
+  .issue-title--name {
+    font-size: 27px;
   }
   .issue-number {
     display: inline-block;
@@ -422,6 +434,7 @@ ul {
   }
   .issue-description {
     width: 300px;
+    font-size: 18px;
   }
   .purchase-button {
     width: 60px;
@@ -434,6 +447,8 @@ ul {
   }
   .stocking-link {
     display: block;
+    margin-top: 17px;
+    font-size: 16px;
   }
 }
 .community-section {
@@ -503,7 +518,7 @@ ul {
   margin: 20px auto;
 }
 .stockist-contact {
-  font-family: 'novel_proregular';
+  font-family: 'novel_sans_proregular';
 }
 .stockist-email {
   font-family: 'novel_sans_proextrabold';
@@ -659,14 +674,10 @@ ul {
 }
 @media screen and (min-width: 667px) and (orientation: landscape) {
   .community-section {
-    height: 450vh;
     padding: 7vh 10vw 0 10vw;
   }
 }
 @media screen and (orientation: landscape) and (min-width: 736px) {
-  .community-section {
-    height: 331vh;
-  }
   .community-section--stockist-section {
     flex-direction: row;
     justify-content: space-between;
@@ -682,7 +693,7 @@ ul {
 }
 @media screen and (min-width: 1024px) {
   .community-section {
-    height: 183vh;
+    height: 188vh;
     padding: 10vh 5vw 0vw 5vw;
   }
   .community-section--stockist-section {
@@ -698,6 +709,9 @@ ul {
   }
   .community-section--testamonials-section {
     flex-direction: row;
+  }
+  .stockist-contact {
+    font-size: 18px;
   }
   .testamonial-copy {
     margin: 0px 20px;
