@@ -46,7 +46,7 @@
   height calc(100vh - 50px)
   width 100%
   position relative
-  overflow-x hidden
+  overflow hidden
   order 2
 
 .issue-slider-section--slide
@@ -229,8 +229,13 @@
     font-size 20px
 
 @media screen and (min-width: 1024px)
+  .issue-list
+    justify-content: flex-start
+
   .issue-section--title
     display block
+    margin-top 50px
+    font-size 41px
 
   .mobile-issue-slider-header
     display

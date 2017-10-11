@@ -1,0 +1,120 @@
+.stockist-modal--overlay
+  position fixed
+  width 100vw
+  height 100vh
+  top 0
+  bottom 0
+  left 0
+  right 0
+  background-color rgba(0, 0, 0, 0.8)
+  opacity 0
+  z-index -1
+  transition opacity 0.3s ease-in-out
+  display flex
+
+.stockist-modal--overlay-visibile
+  opacity 1
+  z-index 12
+
+.stockist-modal--container
+  background-color white
+  display flex
+  width 80vw
+  max-width 900px
+  height 58vh
+  margin auto auto
+  position: relative;
+
+.stockist-modal--image
+  background-image: url(./assets/mag_stack-01.svg)
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 50%;
+  width: 37%;
+  flex: 0 0 auto;
+  margin: 60px;
+
+.stockist-modal--description-section
+  margin-top 54px
+
+.stockist-modal--description-issue-number
+  color black
+  font-family $regaular-sans-font
+  font-size 21px
+  letter-spacing: 1.1px
+  text-transform uppercase
+
+.stockist-modal--description-issue-title
+  font-family $bold-font
+  color black
+  text-transform: uppercase
+  font-size 16px
+  letter-spacing 1.1px
+  margin 0px 0px 20px 0px
+  max-width 450px
+  cursor pointer
+
+.stockist-modal--description-issue-workshop-bundle-text
+  color black
+  font-family $regaular-sans-font
+  font-size 21px
+  letter-spacing: 1.1px
+  text-transform uppercase
+
+.stockist-modal--description-issue-description
+  font-family $regaular-sans-font
+  font-size 16px
+  margin 0px 0px 20px 0px
+  width 350px
+
+.stockist-modal--button
+  width 58px
+  font-family $bold-font
+  font-size 17px
+  letter-spacing: 1.1px
+  text-transform uppercase
+  border 2px solid black
+  color black
+  padding 4px 7px
+  text-decoration none
+
+.stockist-modal--close-icon
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  width: 33px;
+  height: 32px;
+  background-color black
+  cursor pointer
+
+.stockist-modal--close-icon:hover
+  &:before
+  &:after
+    opacity 0.3
+
+.stockist-modal--close-icon:before,
+.stockist-modal--close-icon:after
+  position: absolute;
+  left: 15px;
+  content: '';
+  height: 33px;
+  width: 3px;
+  background-color: white;
+
+.stockist-modal--close-icon:before
+  transform: rotate(45deg);
+
+.stockist-modal--close-icon:after
+  transform: rotate(-45deg)
+
+@media screen and (max-width: 600px)
+  .stockist-modal--close-icon
+    right 10px
+    top 10px
+    width 21px
+    height 22px
+
+  .stockist-modal--close-icon:before,
+  .stockist-modal--close-icon:after
+    height 20px
+    left 9px

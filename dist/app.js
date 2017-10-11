@@ -85,6 +85,27 @@ issueOneModalCloseIcon.addEventListener('click', function () {
   removeClass(issueOneModal, 'modal-overlay-visibile')
 })
 
+// ISSUE ONE STOCKIST MODAL
+// .stocking-box
+// .stocking-link
+var stockingBox = document.querySelector('.stocking-box')
+var stockingLink = document.querySelector('.stocking-link')
+var stockistIssueOneModal = document.querySelector('.stockist--issue-one-modal')
+var stockistIssueOneModalCloseIcon = document.querySelector('.stockist-issue-one-modal--close-icon')
+// .stockist--issue-one-modal
+// .stockist-issue-one-modal--close-icon
+
+stockingBox.addEventListener('click', function () {
+  addClass(stockistIssueOneModal, 'stockist-modal--overlay-visibile')
+})
+
+stockingLink.addEventListener('click', function () {
+  addClass(stockistIssueOneModal, 'stockist-modal--overlay-visibile')
+})
+
+stockistIssueOneModalCloseIcon.addEventListener('click', function () {
+  removeClass(stockistIssueOneModal, 'stockist-modal--overlay-visibile')
+})
 
 // var myVideo = document.getElementById('video');
 //
