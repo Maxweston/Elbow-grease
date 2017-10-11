@@ -340,6 +340,7 @@ ul {
   margin: 0px 10px;
   padding: 0px 7px 0px 7px;
   vertical-align: sub;
+  cursor: pointer;
 }
 .active-issue {
   border-bottom: 2px solid #fff;
@@ -350,6 +351,7 @@ ul {
   text-transform: uppercase;
   text-decoration: underline;
   display: none;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .issue-number {
@@ -497,6 +499,7 @@ ul {
 .modal-container {
   background-color: #fff;
   width: 61vw;
+  height: 43vw;
   margin: auto auto;
   position: relative;
 }
