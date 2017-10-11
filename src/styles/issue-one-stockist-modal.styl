@@ -19,28 +19,36 @@
 .stockist-modal--container
   background-color white
   display flex
-  width 80vw
-  max-width 900px
+  width 90vw
+  max-width 378px
   height 58vh
   margin auto auto
   position: relative;
+  justify-content: center;
 
 .stockist-modal--image
+  display none
   background-image: url(./assets/mag_stack-01.svg)
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 50%;
+  background-position-x: 100%
   width: 37%;
   flex: 0 0 auto;
   margin: 60px;
 
 .stockist-modal--description-section
   margin-top 54px
+  margin-bottom: 60px
+  display flex
+  flex-direction column
+  justify-content: flex-start;
+  width 90%
 
 .stockist-modal--description-issue-number
   color black
   font-family $regaular-sans-font
-  font-size 21px
+  font-size 16px
   letter-spacing: 1.1px
   text-transform uppercase
 
@@ -50,32 +58,31 @@
   text-transform: uppercase
   font-size 16px
   letter-spacing 1.1px
-  margin 0px 0px 20px 0px
   max-width 450px
   cursor pointer
 
 .stockist-modal--description-issue-workshop-bundle-text
   color black
   font-family $regaular-sans-font
-  font-size 21px
+  font-size 16px
   letter-spacing: 1.1px
   text-transform uppercase
 
 .stockist-modal--description-issue-description
   font-family $regaular-sans-font
   font-size 16px
-  margin 0px 0px 20px 0px
-  width 350px
+  // width 284px
+  margin: 39px 0px 47px 0px;
 
 .stockist-modal--button
-  width 58px
+  width 232px
   font-family $bold-font
   font-size 17px
   letter-spacing: 1.1px
   text-transform uppercase
   border 2px solid black
   color black
-  padding 4px 7px
+  padding 7px
   text-decoration none
 
 .stockist-modal--close-icon
@@ -84,7 +91,7 @@
   top: 25px;
   width: 33px;
   height: 32px;
-  background-color black
+  background-color white
   cursor pointer
 
 .stockist-modal--close-icon:hover
@@ -99,13 +106,17 @@
   content: '';
   height: 33px;
   width: 3px;
-  background-color: white;
+  background-color: black;
 
 .stockist-modal--close-icon:before
   transform: rotate(45deg);
 
 .stockist-modal--close-icon:after
   transform: rotate(-45deg)
+
+@media screen and (min-width: 360px)
+  .stockist-modal--description-section
+    width 70%
 
 @media screen and (max-width: 600px)
   .stockist-modal--close-icon
@@ -118,3 +129,31 @@
   .stockist-modal--close-icon:after
     height 20px
     left 9px
+
+@media screen and (min-width: 840px)
+  .stockist-modal--container
+    justify-content: center;
+    width 80vw
+    max-width 900px
+
+  .stockist-modal--image
+    display block
+
+  .stockist-modal--description-issue-number
+    font-size 21px
+
+  .stockist-modal--description-issue-title
+    font-size 27px
+
+  .stockist-modal--description-issue-workshop-bundle-text
+    font-size 21px
+
+  .stockist-modal--description-issue-description
+    font-size 18px
+    width 284px
+    margin: 39px 0px 47px 0px;
+
+
+@media screen and (min-width: 1024px)
+  .stockist-modal--description-section
+    justify-content: flex-start;
