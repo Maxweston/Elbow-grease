@@ -18,8 +18,8 @@ section.issue-list
         div.issue-title
           div.issue-title--number Issue #1
           img(src="./assets/issue_one_mobile.jpg").issue-one-mobile-image
-          div.issue-title--name Ascendance
-        p.issue-description In our first issue, we look at what work means, or had meant, to people at different stages in there own journeys.
+          div.issue-title--name.issue-one--title Ascendance
+        p.issue-description.issue-one--description In our first issue, we look at what work means, or had meant, to people at different stages in there own journeys.
         a.purchase-button Buy
     div.issue-two.issue-slider-section--slide.slide-on-right
       div.issue-number.question-mark
@@ -36,7 +36,6 @@ section.issue-list
         li.issue-selector-number.active-issue 1
         li.issue-selector-number 2
     a.stocking-link Interested In Stocking?
-  include ./issue-one-modal.pug
 section.community-section
   div.community-section--title
     h1 Community

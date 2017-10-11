@@ -64,6 +64,27 @@ if (!isMobile) {
   showVideoOnLoad()
 }
 
+// MODAL HANDLING LOGIC
+// ISSUE ONE MODAL
+// .issue-one--title
+// .issue-one--description
+var issueOneTitle = document.querySelector('.issue-one--title')
+var issueOneDescription = document.querySelector('.issue-one--description')
+var issueOneModal = document.querySelector('.issue-one-modal')
+var issueOneModalCloseIcon = document.querySelector('.issue-one-modal--close-icon')
+
+issueOneTitle.addEventListener('click', function () {
+  addClass(issueOneModal, 'modal-overlay-visibile')
+})
+
+issueOneDescription.addEventListener('click', function () {
+  addClass(issueOneModal, 'modal-overlay-visibile')
+})
+
+issueOneModalCloseIcon.addEventListener('click', function () {
+  removeClass(issueOneModal, 'modal-overlay-visibile')
+})
+
 
 // var myVideo = document.getElementById('video');
 //
