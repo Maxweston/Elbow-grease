@@ -587,7 +587,7 @@ ul {
   display: flex;
   width: 90vw;
   max-width: 378px;
-  height: 58vh;
+  height: 410px;
   margin: auto auto;
   position: relative;
   justify-content: center;
@@ -717,7 +717,7 @@ ul {
   .stockist-modal--description-issue-description {
     font-size: 18px;
     width: 284px;
-    margin: 39px 0px 47px 0px;
+    margin: 13px 0px 43px 0px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -935,25 +935,21 @@ ul {
 }
 @media screen and (min-width: 600px) {
   .community-section {
-    height: 214vh;
+    height: auto;
+    max-height: 2000px;
   }
 }
-@media screen and (min-width: 768px) {
-  .community-section {
-    height: 207vh;
-  }
-}
-@media screen and (orientation: landscape) {
+@media screen and (min-width: 768px) and (orientation: landscape) {
   .testamonial-wrapper {
     margin-bottom: 70px;
   }
 }
-@media screen and (min-width: 667px) and (orientation: landscape) {
+@media screen and (min-width: 768px) and (min-width: 667px) and (orientation: landscape) {
   .community-section {
     padding: 7vh 10vw 0 10vw;
   }
 }
-@media screen and (orientation: landscape) and (min-width: 736px) {
+@media screen and (min-width: 768px) and (orientation: landscape) and (min-width: 736px) {
   .community-section--stockist-section {
     flex-direction: row;
     justify-content: space-between;
@@ -962,14 +958,14 @@ ul {
     text-align: left;
   }
 }
-@media screen and (orientation: landscape) and (min-width: 1024px) {
+@media screen and (min-width: 768px) and (orientation: landscape) and (min-width: 1024px) {
   .community-section {
     height: 193vh;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) and (min-width: 1024px) {
   .community-section {
-    height: 160vh;
+    height: 1400px;
     padding: 10vh 5vw 0vw 5vw;
   }
   .community-section--stockist-section {
