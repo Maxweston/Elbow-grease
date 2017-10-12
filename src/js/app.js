@@ -42,6 +42,45 @@ if (!isMobile) {
 }
 
 // Description Modal Logic
+// MODAL HANDLING LOGIC
+// ISSUE ONE MODAL
+var issueOneTitle = document.querySelector('.issue-one--title')
+var issueOneDescription = document.querySelector('.issue-one--description')
+var issueOneModal = document.querySelector('.issue-one-modal')
+var issueOneModalCloseIcon = document.querySelector('.issue-one-modal--close-icon')
+
+issueOneTitle.addEventListener('click', function () {
+  addClass(issueOneModal, 'modal-overlay-visibile')
+})
+
+issueOneDescription.addEventListener('click', function () {
+  addClass(issueOneModal, 'modal-overlay-visibile')
+})
+
+issueOneModalCloseIcon.addEventListener('click', function () {
+  removeClass(issueOneModal, 'modal-overlay-visibile')
+})
+
+// ISSUE ONE STOCKIST MODAL
+var stockingBox = document.querySelector('.stocking-box')
+var stockingLink = document.querySelector('.stocking-link')
+var stockistIssueOneModal = document.querySelector('.stockist--issue-one-modal')
+var stockistIssueOneModalCloseIcon = document.querySelector('.stockist-issue-one-modal--close-icon')
+
+stockingBox.addEventListener('click', function () {
+  addClass(stockistIssueOneModal, 'stockist-modal--overlay-visibile')
+})
+
+stockingLink.addEventListener('click', function () {
+  addClass(stockistIssueOneModal, 'stockist-modal--overlay-visibile')
+})
+
+stockistIssueOneModalCloseIcon.addEventListener('click', function () {
+  removeClass(stockistIssueOneModal, 'stockist-modal--overlay-visibile')
+})
+
+
+
 
 function hasClass(el, className) {
   if (el.classList)
