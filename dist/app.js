@@ -48,17 +48,21 @@ var issueOneTitle = document.querySelector('.issue-one--title')
 var issueOneDescription = document.querySelector('.issue-one--description')
 var issueOneModal = document.querySelector('.issue-one-modal')
 var issueOneModalCloseIcon = document.querySelector('.issue-one-modal--close-icon')
+var body = document.body
 
 issueOneTitle.addEventListener('click', function () {
   addClass(issueOneModal, 'modal-overlay-visibile')
+  addClass(body, 'stop-scrolling')
 })
 
 issueOneDescription.addEventListener('click', function () {
   addClass(issueOneModal, 'modal-overlay-visibile')
+  addClass(body, 'stop-scrolling')
 })
 
 issueOneModalCloseIcon.addEventListener('click', function () {
   removeClass(issueOneModal, 'modal-overlay-visibile')
+  removeClass(body, 'stop-scrolling')
 })
 
 // ISSUE ONE STOCKIST MODAL
@@ -69,14 +73,17 @@ var stockistIssueOneModalCloseIcon = document.querySelector('.stockist-issue-one
 
 stockingBox.addEventListener('click', function () {
   addClass(stockistIssueOneModal, 'stockist-modal--overlay-visibile')
+  addClass(body, 'stop-scrolling')
 })
 
 stockingLink.addEventListener('click', function () {
   addClass(stockistIssueOneModal, 'stockist-modal--overlay-visibile')
+  addClass(body, 'stop-scrolling')
 })
 
 stockistIssueOneModalCloseIcon.addEventListener('click', function () {
   removeClass(stockistIssueOneModal, 'stockist-modal--overlay-visibile')
+  removeClass(body, 'stop-scrolling')
 })
 
 

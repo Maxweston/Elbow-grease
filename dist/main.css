@@ -62,6 +62,10 @@ ul {
 .fade-out {
   opacity: 0;
 }
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
 .header {
   background: rgba(0,0,0,0);
   padding-top: 20px;
