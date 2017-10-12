@@ -56,6 +56,8 @@ ul {
   z-index: -100;
   transform: translate(-50%, -50%);
   transition: opacity 0.3s ease-in-out;
+  background-size: cover;
+  background-repeat-y: no-repeat;
 }
 .fade-out {
   opacity: 0;
@@ -720,7 +722,7 @@ ul {
   }
 }
 .community-section {
-  height: 258vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   padding: 7vh 7vw 0 7vw;
@@ -820,9 +822,6 @@ ul {
   height: 54px;
 }
 .magculture-logo {
-  background-image: url("./assets/magculture.svg");
-  width: 222px;
-  height: 68px;
   background-image: url("./assets/magculture.svg");
   width: 142px;
   height: 46px;
