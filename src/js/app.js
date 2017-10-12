@@ -21,34 +21,11 @@ console.log(browserSettings)
 if (isMobile) {
   video.remove()
 }
-// if (userAgent = )
-
-// function replay() {
-//     console.log('video ended');
-//     document.getElementsByTagName('video').currentTime = 0;
-//     document.getElementsByTagName('video')[0].play();
-// }
-
-// function replay() {
-//     console.log('video ended');
-//     console.log(document.getElementsByTagName('video')[0].currentTime)
-//     document.getElementsByTagName('video')[0].currentTime = 0;
-//     console.log(document.getElementsByTagName('video')[0].currentTime)
-//     document.getElementsByTagName('video')[0].play();
-// }
 
 function replay () {
-  // console.log('replay run')
-  // console.log(document.getElementsByTagName('video')[0].currentTime)
   document.getElementsByTagName('video')[0].loop = false
-  // console.log(document.getElementsByTagName('video')[0].currentTime)
   document.getElementsByTagName('video')[0].load()
-  // console.log(document.getElementsByTagName('video')[0].currentTime)
   document.getElementsByTagName('video')[0].play()
-  // console.log(document.getElementsByTagName('video')[0].currentTime)
-  // setTimeout(function () {
-  //   console.log(document.getElementsByTagName('video')[0].currentTime)
-  // }, 50)
 }
 
 
@@ -63,50 +40,6 @@ function showVideoOnLoad () {
 if (!isMobile) {
   showVideoOnLoad()
 }
-
-
-// var myVideo = document.getElementById('video');
-//
-// if (typeof myVideo.loop == 'boolean') { // loop supported
-//     myVideo.loop = true;
-// } else { // loop property not supported
-//     myVideo.on('ended', function () {
-//     this.currentTime = 0;
-//     this.play();
-//     }, false);
-// }
-// myVideo.play();
-
-// var vid = document.getElementsByTagName('video')[0]
-
-// function restartVideo(){
-//   console.log('resart video run')
-//   vid.currentTime = 0.1; //setting to zero breaks iOS 3.2, the value won't update, values smaller than 0.1 was causing bug as well.
-//   vid.play();
-// }
-
-//loop video
-// if (vid) {
-//   console.log('hello')
-//   vid.addEventListener('ended', restartVideo, false);
-// }
-
-
-// document.getElementsByTagName('video')[0].onended = function () {
-//   console.log(this)
-//   this.load();
-//   this.play();
-// };
-// document.body.querySelector('video.eg-video').addEventListener('ended', function () {
-//   console.log('event handler fired')
-//   document.body.querySelector('video').load();
-//   document.body.querySelector('video').play();
-// });
-// var sliderState = {
-//   currentActiveSlideIndex: 0
-//   slidesOnleft: [],
-//   slidesOnRight: [1]
-// }
 
 // Description Modal Logic
 
@@ -132,21 +65,6 @@ function removeClass(el, className) {
   }
 }
 
-// function checkClassExicts (element, checkClass) {
-//   var element = element.classList
-//   var foundMatch = false
-//   // console.log(element)
-//   Object.keys(element).forEach(function (key) {
-//     // console.log(element[key])
-//     if (element[key] === checkClass) {
-//       // console.log('here')
-//       foundMatch = true
-//       return
-//     }
-//   })
-//
-//   return foundMatch
-// }
 
 function getActiveIndex () {
   var slides = document.querySelector('.issue-slider-section').children
@@ -176,13 +94,8 @@ function issueSlider () {
   console.log(slides)
 
   Object.keys(issues).forEach(function (issue) {
-    // console.log(issue)
-    // console.log(issues[issue])
     issues[issue].addEventListener('click', function () {
-      // console.log('clicked' + issue)
-      // console.log(issues[issue].classList)
       console.log(slides[issue])
-      // console.log(checkClassExicts(slides[issue], 'active-slide'))
       sliderController(slides[issue], issue)
     })
   })
@@ -200,7 +113,6 @@ function sliderController (selectedSlide, index) {
     var currentSlide = document.querySelector('.issue-slider-section').children[currentActiveIndex]
     var nextCurrentSlide = document.querySelector('.issue-slider-section').children[index]
     removeClass(currentSlide, 'active-slide')
-    // addClass(nextCurrentSlide, 'active-slide')
     if (currentActiveIndex < index) {
       addClass(currentSlide, 'slide-on-left')
       addClass(nextCurrentSlide, 'active-slide')

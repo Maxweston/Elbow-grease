@@ -21,34 +21,11 @@ console.log(browserSettings)
 if (isMobile) {
   video.remove()
 }
-// if (userAgent = )
-
-// function replay() {
-//     console.log('video ended');
-//     document.getElementsByTagName('video').currentTime = 0;
-//     document.getElementsByTagName('video')[0].play();
-// }
-
-// function replay() {
-//     console.log('video ended');
-//     console.log(document.getElementsByTagName('video')[0].currentTime)
-//     document.getElementsByTagName('video')[0].currentTime = 0;
-//     console.log(document.getElementsByTagName('video')[0].currentTime)
-//     document.getElementsByTagName('video')[0].play();
-// }
 
 function replay () {
-  // console.log('replay run')
-  // console.log(document.getElementsByTagName('video')[0].currentTime)
   document.getElementsByTagName('video')[0].loop = false
-  // console.log(document.getElementsByTagName('video')[0].currentTime)
   document.getElementsByTagName('video')[0].load()
-  // console.log(document.getElementsByTagName('video')[0].currentTime)
   document.getElementsByTagName('video')[0].play()
-  // console.log(document.getElementsByTagName('video')[0].currentTime)
-  // setTimeout(function () {
-  //   console.log(document.getElementsByTagName('video')[0].currentTime)
-  // }, 50)
 }
 
 
@@ -63,92 +40,6 @@ function showVideoOnLoad () {
 if (!isMobile) {
   showVideoOnLoad()
 }
-
-// MODAL HANDLING LOGIC
-// ISSUE ONE MODAL
-// .issue-one--title
-// .issue-one--description
-var issueOneTitle = document.querySelector('.issue-one--title')
-var issueOneDescription = document.querySelector('.issue-one--description')
-var issueOneModal = document.querySelector('.issue-one-modal')
-var issueOneModalCloseIcon = document.querySelector('.issue-one-modal--close-icon')
-
-issueOneTitle.addEventListener('click', function () {
-  addClass(issueOneModal, 'modal-overlay-visibile')
-})
-
-issueOneDescription.addEventListener('click', function () {
-  addClass(issueOneModal, 'modal-overlay-visibile')
-})
-
-issueOneModalCloseIcon.addEventListener('click', function () {
-  removeClass(issueOneModal, 'modal-overlay-visibile')
-})
-
-// ISSUE ONE STOCKIST MODAL
-// .stocking-box
-// .stocking-link
-var stockingBox = document.querySelector('.stocking-box')
-var stockingLink = document.querySelector('.stocking-link')
-var stockistIssueOneModal = document.querySelector('.stockist--issue-one-modal')
-var stockistIssueOneModalCloseIcon = document.querySelector('.stockist-issue-one-modal--close-icon')
-// .stockist--issue-one-modal
-// .stockist-issue-one-modal--close-icon
-
-stockingBox.addEventListener('click', function () {
-  addClass(stockistIssueOneModal, 'stockist-modal--overlay-visibile')
-})
-
-stockingLink.addEventListener('click', function () {
-  addClass(stockistIssueOneModal, 'stockist-modal--overlay-visibile')
-})
-
-stockistIssueOneModalCloseIcon.addEventListener('click', function () {
-  removeClass(stockistIssueOneModal, 'stockist-modal--overlay-visibile')
-})
-
-// var myVideo = document.getElementById('video');
-//
-// if (typeof myVideo.loop == 'boolean') { // loop supported
-//     myVideo.loop = true;
-// } else { // loop property not supported
-//     myVideo.on('ended', function () {
-//     this.currentTime = 0;
-//     this.play();
-//     }, false);
-// }
-// myVideo.play();
-
-// var vid = document.getElementsByTagName('video')[0]
-
-// function restartVideo(){
-//   console.log('resart video run')
-//   vid.currentTime = 0.1; //setting to zero breaks iOS 3.2, the value won't update, values smaller than 0.1 was causing bug as well.
-//   vid.play();
-// }
-
-//loop video
-// if (vid) {
-//   console.log('hello')
-//   vid.addEventListener('ended', restartVideo, false);
-// }
-
-
-// document.getElementsByTagName('video')[0].onended = function () {
-//   console.log(this)
-//   this.load();
-//   this.play();
-// };
-// document.body.querySelector('video.eg-video').addEventListener('ended', function () {
-//   console.log('event handler fired')
-//   document.body.querySelector('video').load();
-//   document.body.querySelector('video').play();
-// });
-// var sliderState = {
-//   currentActiveSlideIndex: 0
-//   slidesOnleft: [],
-//   slidesOnRight: [1]
-// }
 
 // Description Modal Logic
 
@@ -174,21 +65,6 @@ function removeClass(el, className) {
   }
 }
 
-// function checkClassExicts (element, checkClass) {
-//   var element = element.classList
-//   var foundMatch = false
-//   // console.log(element)
-//   Object.keys(element).forEach(function (key) {
-//     // console.log(element[key])
-//     if (element[key] === checkClass) {
-//       // console.log('here')
-//       foundMatch = true
-//       return
-//     }
-//   })
-//
-//   return foundMatch
-// }
 
 function getActiveIndex () {
   var slides = document.querySelector('.issue-slider-section').children
@@ -218,13 +94,8 @@ function issueSlider () {
   console.log(slides)
 
   Object.keys(issues).forEach(function (issue) {
-    // console.log(issue)
-    // console.log(issues[issue])
     issues[issue].addEventListener('click', function () {
-      // console.log('clicked' + issue)
-      // console.log(issues[issue].classList)
       console.log(slides[issue])
-      // console.log(checkClassExicts(slides[issue], 'active-slide'))
       sliderController(slides[issue], issue)
     })
   })
@@ -242,7 +113,6 @@ function sliderController (selectedSlide, index) {
     var currentSlide = document.querySelector('.issue-slider-section').children[currentActiveIndex]
     var nextCurrentSlide = document.querySelector('.issue-slider-section').children[index]
     removeClass(currentSlide, 'active-slide')
-    // addClass(nextCurrentSlide, 'active-slide')
     if (currentActiveIndex < index) {
       addClass(currentSlide, 'slide-on-left')
       addClass(nextCurrentSlide, 'active-slide')
